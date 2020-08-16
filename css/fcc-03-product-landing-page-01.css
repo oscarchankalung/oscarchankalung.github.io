@@ -1,0 +1,280 @@
+/* default */
+
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+	box-sizing: border-box;
+}
+:target {
+  display: block;
+  position: relative;
+  top: -70px;
+	visibility: hidden;
+}
+@media (max-width: 650px) {
+	:target {
+		top: -120px;
+	}
+}
+body {
+  background-color: #ddd;
+  font-family: 'Lato', sans-serif;
+}
+
+/* layout */
+
+header {
+  position: fixed;
+	top: 0;
+  width: 100%;
+	padding-left: 60px;
+  display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+  justify-content: space-between;
+  background-color: #aaa;
+}
+section {
+	position: relative;
+	padding: 30px;
+}
+.section-odd {
+	background-color: #ddd;
+}
+.section-even {
+	background-color: white;
+}
+footer {
+	background-color: #ddd;
+}
+
+/* text */
+
+ul {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+	overflow: hidden;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/* header */
+#header {
+	z-index: 1;
+}
+#logo-bar{
+	height: 70px;
+	width: 100%;
+  max-width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px  black;
+}
+#header-img {
+	width: 100%;
+	height: auto;
+	margin-left: -20px;
+	padding: 15px 0px;
+	display: block;
+}
+#nav-bar {
+	font-weight: 400;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.nav-link {
+	height: 70px;
+	width: 100%;
+	padding: 0px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px black;
+}
+.nav-link:hover {
+  background-color: #333;
+	color: white;
+}
+@media (max-width: 650px) {
+	#nav-bar {
+		width: 100%;
+		justify-content: center;
+	}
+	.nav-link {
+		height: 50px;
+	}
+}
+
+/* sale */
+
+#sale {
+	margin-top: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+@media (max-width: 650px) {
+	#sale {
+		margin-top: 120px;
+	}
+}
+#sale #form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#sale input {
+	height: 30px;
+	padding: 5px;
+	margin-top: 20px;
+	text-align: center;
+}
+#sale #email {
+	width: 220px;
+	margin-right: 20px;
+}
+.button {
+	height: 30px;
+	width: 120px;
+	padding: 5px;
+	background-color: yellow;
+	border: 0;
+	border-radius: 2px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: darkorange;
+}
+@media (max-width: 650px) {
+	#sale #email {
+		margin-right: 0px;
+	}
+}
+
+/* features */
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 0px;
+}
+.icon {
+	max-width: 150px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: darkorange;
+}
+.desc {
+	max-width: 750px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.desc h2 {
+	margin-bottom: 20px;
+}
+@media (max-width: 650px) {
+	.icon {
+		margin-bottom: 20px;
+	}
+	.desc {
+		text-align: center;
+	}
+}
+
+/* demo */
+
+.video-container {
+	position: relative;
+	max-width: 560px;
+  width: 100%;
+	margin: 0 auto;
+}
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* pricing */
+
+#pricing {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.product {
+	max-width: 280px;
+	width: 100%;
+	margin: 10px 10px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+.level {
+	font-weight: 700;
+	padding: 15px 0px;
+	text-align: center;
+  background-color: #ddd;
+}
+.product > h2 {
+	margin-top: 15px;
+}
+.product > ul,
+.product > ul > li{
+	margin: 10px 0px;
+}
+.product > .button {
+	margin-bottom: 20px;
+}
+
+/* footer */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 10px;
+}
+footer > ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px 0px;
+}
+footer > ul > li {
+	padding: 0px 10px;
+	text-decoration: none;
+}
+span {
+	color: #444;
+	margin-bottom: 10px;
+	padding: 0px 10px;
+}

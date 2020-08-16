@@ -1,0 +1,88 @@
+html {
+  /*Base font size for rem calculations*/
+  font-size: 10px;
+}
+#main {
+  /*Default text format*/
+  font-family: Roboto;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+#background {
+  overflow: auto;
+  background-color: hsl(0,0%,80%,1);
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+#header-div {
+  background-color: ;
+  margin: 10px 0px;
+  padding: 5px 0px;
+}
+#title {
+  font-size: 4rem;
+  font-weight: normal;
+}
+#subtitle {
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+    #title {
+      font-size: 3.5rem;
+    }
+    #subtitle {
+      font-size: 1.6rem;
+    }
+}
+#img-div {
+  background-color: hsl(0,0%,70%,1);
+  margin: 10px 0px;
+  padding: 10px 10px 15px 10px;
+}
+#image {
+  /*center*/
+  display: block;
+  margin: 0 auto;
+  /*responsive width*/
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+}
+#img-caption {
+  font-size: 1.5rem;
+}
+#tribute-info {
+  /*responsive width*/
+  max-width: 550px;
+  /*color, content and text*/
+  background-color: ;
+  margin: 10px auto;
+  padding: 5px 15px;
+  font-size: 1.5rem;
+}
+#tribute-head {
+  font-weight: bold;
+  font-size: 2.0rem;
+}
+ul {
+  text-align: left;
+}
+li {
+  margin: 15px 30px 15px 0px;
+}
+year {
+  font-weight: bold;
+}
+#tribute-quote {
+  text-align: left;
+  font-style: italic;
+  margin: 30px 0px 0px 0px;
+}
+#footer-div {
+  background-color: ;
+  margin: 30px auto;
+  padding: 0px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

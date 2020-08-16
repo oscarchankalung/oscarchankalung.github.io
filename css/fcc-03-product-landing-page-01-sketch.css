@@ -1,0 +1,51 @@
+/* default */
+:root
+*, *::befoer, *::after
+
+/* layout */
+header
+section
+footer
+.section-odd
+.section-even
+
+/* text */
+h2
+ul
+p
+span
+
+/* header */
+#logo-bar
+#nav-bar
+.nav-link
+.nav-link:hover
+
+/* sale */
+#title
+.email
+#class
+
+/* features */
+.grid
+.icon
+.desc
+
+/* demo */
+iframe
+
+/* pricing */
+
+.product
+.level
+.button
+
+/* footer */
+
+
+
+/* list */
+?nav-list
+?price-list
+?footer-list
+

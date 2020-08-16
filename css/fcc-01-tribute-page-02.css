@@ -1,0 +1,134 @@
+@import "https://fonts.googleapis.com/css?family=Open%20Sans:Normal,Bold";
+
+html {
+  /*base font size for rem calculations*/
+  font-size: 10px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+#main {
+  padding: 1.0rem;
+  /*default text format*/
+  font-family: 'Open Sans';
+  font-weight: Normal;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  /*background*/
+  background-image: url("../img/fcc-01-tribute-page/stamp-4.jpg");
+  background-size: 10%;
+  background-color: white;
+}
+#float {
+  overflow: auto;
+  background-color: black;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1vw;
+  margin: 0px auto;
+  /*responsive width*/
+  width: 100%;
+  max-width: 900px;
+}
+#header-div {
+  background-color: hsl(0,0%,0%,1);
+  margin: 10px 0px;
+  padding: 20px;
+  font-weight: Bold;
+}
+#title {
+  font-size: 4rem;
+}
+#subtitle {
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+    #title {
+      font-size: 3rem;
+    }
+    #subtitle {
+      font-size: 1.6rem;
+    }
+}
+#fig-div {
+  background-color: hsl(0,0%,50%,1);
+  margin: 10px 0px;
+  padding: 20px;
+}
+#img-div {
+  /*center*/
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+}
+#black-profile {
+  /*responsive*/
+  width: 50%;
+  height: auto;
+  transform: scaleX(-1);
+}
+#red-profile {
+  /*responsive*/
+  width: 50%;
+  height: auto;
+}
+#img-caption {
+  color: black;
+}
+main {
+  margin: 10px 0px;
+  padding: 20px;
+  background-color: hsl(0,0%,0%,1);
+}
+#tribute-info {
+  /*responsive width*/
+  max-width: 550px;
+  /*color, content and text*/
+  margin: 0px auto;
+  text-align: left;
+}
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+li {
+  margin: 15px 40px 15px 0px;
+}
+year {
+  font-weight: bold;
+}
+#tribute-quote {
+  font-style: italic;
+  margin: 30px auto;
+}
+#tribute-wiki {
+  margin: 0px auto;
+  font-weight: bold;
+}
+#footer-div {
+  max-width: 100%;
+  /*color, content and text*/
+  background-color: hsl(0,0%,30%,1);
+  margin: 10px auto 0px auto;
+  padding: 20px;
+  text-align: left;
+  word-wrap: break-word;
+}
+#footer-list {
+  margin: 5px auto;
+}
+a:link {
+  color: #73FDFF;
+}
+a:visited {
+  color: #FF85FF;
+}

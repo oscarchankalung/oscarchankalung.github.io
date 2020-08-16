@@ -1,0 +1,54 @@
+/* default */
+:root
+*, *::befoer, *::after
+:target
+html
+@media (max-width: 650px) {}
+
+/* layout */
+header
+section
+footer
+
+/* text */
+
+h1
+h4
+p
+a
+ul
+
+/* nav */
+nav
+nav #image
+nav #image img
+nav #navigate 
+nav #navigate .button
+nav #navigate .button:hover
+
+/* register */
+
+#register #content
+#register #content #email
+#register #content #submit
+#register #image
+#register #image img
+
+/* showcase */
+
+.video-wrapper
+.video-wrapper::after
+.video-wrapper iframe
+
+/* features */
+
+#features .grid-wrapper
+#features .grid-item
+#features img
+
+/* pricing */
+
+#pricing .grid-wrapper
+#pricing .grid-item
+
+/* footer */

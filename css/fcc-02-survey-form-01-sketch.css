@@ -1,0 +1,41 @@
+/* default */
+:root
+*, *::befoer, *::after
+
+/* layout */
+body
+header
+form
+
+/* header */
+#title
+#description
+
+/* form-layout */
+.form-group
+
+/* form-textbox */
+label			.question-title
+span			.question-clue 	
+input			.input-textbox .input-text ::placeholder
+
+/* form-select */
+p					.question-title
+select		.input-textbox .input-text
+
+/* form-radio */
+p					.question-title
+label			.question-option
+input			.input-radio
+
+/* form-checkbox */
+p					.question-title
+label			.question-option
+input			.input-checkbox
+
+/* form-textarea */
+p					.question-title
+textarea	.input-textarea .input-text ::placeholder
+
+/* form-submit */
+input			.button-submit .button-text

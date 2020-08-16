@@ -1,0 +1,147 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:200i,400";
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* default text format */
+  font-family: Poppins;
+  font-weight: Normal;
+  font-size: 1.0rem;
+  text-align: left;
+  line-height: 1.5;
+  color: var(--color-white);
+  /*background*/
+  padding: 0 1.0rem;
+  background: var(--color-darkblue);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(58, 58, 158, 0.7),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("../img/fcc-02-survey-form/fcc-background.jpeg");
+}
+
+/* header */
+header {
+  margin: 2.0rem 0;
+}
+#title {
+  text-align: center;
+  font-weight: 400;
+}
+#description {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.125rem;
+  font-weight: 200;
+}
+
+/* survey-form */
+
+form {
+  overflow: auto;
+  background-color: var(--color-darkblue-alpha);
+  border-radius: 0.25rem;
+  margin: 2.0rem auto;
+  padding: 0rem 2.0rem;
+  max-width: 800px;
+  width: 100%;
+  font-size: 1.125rem;
+}
+
+.form-group {
+  margin: 2.0rem auto 2.0rem auto;
+}
+
+/* survey-form-text */
+
+.clue {
+  font-size: 0.9rem;
+  margin-left: 0.25rem;
+}
+
+label, p, .button-text {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+label, p {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+.input-text,
+::placeholder {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: inherit;
+  font-size: 1.0rem;
+  line-height: 1.5; 
+}
+
+.input-text {
+  color: #495057;
+}
+
+/* survey-form-input */
+
+.input-textbox {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.input-textbox:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  margin: 0rem 0.5rem 0rem 0rem;
+  min-height: 1.0rem;
+  min-width: 1.0rem;
+}
+
+.input-textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  resize: vertical;
+}
+
+.button-submit {
+  display: block;
+  width: 100%;
+  height: 3.25rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--color-green);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}

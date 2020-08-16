@@ -1,0 +1,40 @@
+<body>
+	<form class="form-wrapper">
+
+		<div class="form-container" id="form-header">
+			<div class="stripe"></div>
+			<div class="title"></div>
+			<div class="description"></div>
+		</div>
+
+			<input type="text" name="name" id="name"/>
+			<input type="email" name="email" id="email"/>
+
+			<p>Rank</p>
+			<select name="rank"></select>
+
+			<p>Do you want to purchase the beginner package?</p>
+			<span class="clue">
+				$950 for 6 classes. Paid session would be exempted.
+			</span>
+			<input type="radio" name="package"/>
+
+			<p>Which practices did you attend and pay?</p>
+			<div class="form-checkbox-grid form-checkbox-grid-header">
+				<div class="col-1">Practice</div>
+				<div class="col-2">Attended</div>
+				<div class="col-3">Paid</div>
+			</div>
+			<div class="form-checkbox-grid">
+				<div class="col-1">Practice 1</div>
+				<div class="col-2"><input type="checkbox"/></div>
+				<div class="col-3"><input type="checkbox"/></div>
+			</div>
+
+			<p>Any feedback about the practice or the adminstration?</p>
+			<textarea name="feedback"></textarea>
+
+			<input type="submit" id="submit" value="Submit"/>
+
+	</form>	
+</body>
