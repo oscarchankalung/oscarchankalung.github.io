@@ -1,0 +1,21 @@
+/* deafult */
+:root
+*, *::befoer, *::after
+html
+
+/* nav */
+nav
+nav header
+nav ul
+nav ul > li
+nav a
+@media (max-width: 800px) {}
+
+/* doc */
+
+#main-doc
+#main-doc header
+#main-doc p
+#main-doc ul > li
+#main-doc code
+@media (max-width: 800px) {}
