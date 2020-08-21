@@ -1,4 +1,5 @@
 /* default */
+
 :root {
 	--plain: white;
 	--light: #76c9d4;
@@ -85,6 +86,7 @@ img {
 }
 
 /* nav */
+
 nav {
   padding: 0px 40px;
   display: flex;
@@ -326,7 +328,7 @@ iframe {
   border: 2px solid black;
   border-radius: 5px;
   border: 2px solid black;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 5px 5px;
 }
 #pricing .desc h1 {
   font-size: 3vw;
