@@ -292,7 +292,7 @@ article #content p {
 	margin-bottom: 20px;
 }
 article #content ul {
-	padding-inline: 32px;
+	padding-inline-start: 32px;
 	line-height: 24px;
 	margin-bottom: 20px;
 }
@@ -321,6 +321,10 @@ article #content code {
 article #content pre>code {
 	background: transparent;
 	padding: 0;
+}
+article #content .callout {
+	margin-bottom: 20px;
+	font-size: 14px;
 }
 /* 
 

@@ -205,8 +205,8 @@ kramdown:
 </ul>
 <p>You can enable additional plugins by adding the plugin's gem to the <code>plugins</code> setting in your <em>_config.yml</em> file. For more information, see "<a href="https://jekyllrb.com/docs/configuration/">Configuration</a>" in the Jekyll documentation. For a list of supported plugins, see "<a href="https://pages.github.com/versions/">Dependency versions</a>" on the GitHub Pages site.</p>
 <p>For usage information for a specific plugin, see the plugin's documentation.</p>
-<div class="extended-markdown tip border rounded-1 mb-4 p-3 border-blue bg-blue-light f5">
-<p><strong>Tip:</strong> You can make sure you're using the latest version of all plugins by keeping the GitHub Pages gem updated. For more information, see "<a href="https://docs.github.com/en/article/testing-your-github-pages-site-locally-with-jekyll#updating-the-github-pages-gem">Testing your GitHub Pages site locally with Jekyll</a>" and "<a href="https://pages.github.com/versions/">Dependency versions</a>" on the GitHub Pages site.</p>
+<div class="callout">
+<strong>Tip:</strong> You can make sure you're using the latest version of all plugins by keeping the GitHub Pages gem updated. For more information, see "<a href="https://docs.github.com/en/article/testing-your-github-pages-site-locally-with-jekyll#updating-the-github-pages-gem">Testing your GitHub Pages site locally with Jekyll</a>" and "<a href="https://pages.github.com/versions/">Dependency versions</a>" on the GitHub Pages site.
 </div>
 <p>GitHub Pages cannot build sites using unsupported plugins. If you want to use unsupported plugins, generate your site locally and then push your site's static files to GitHub.</p>
 <h3 id="syntax-highlighting"><a href="#syntax-highlighting">Syntax highlighting</a></h3>
@@ -218,7 +218,7 @@ kramdown:
     disable : true
 </code></pre>
 <p>If your theme doesn't include CSS for syntax highlighting, you can generate GitHub's syntax highlighting CSS and add it to your project's <code>style.css</code> file.</p>
-<pre><code class="hljs language-shell">$ rougify style github &gt; style.css</code></pre>
+<pre><code>$ rougify style github &gt; style.css</code></pre>
 <h3 id="building-your-site-locally"><a href="#building-your-site-locally">Building your site locally</a></h3>
 <p>Changes to your site are published automatically when the changes are merged into your site's publishing source. If you want to preview your changes first, you can make the changes locally instead of on GitHub. Then, test your site locally. For more information, see "<a href="https://docs.github.com/en/article/testing-your-github-pages-site-locally-with-jekyll">Testing your GitHub Pages site locally with Jekyll</a>."</p>
 
