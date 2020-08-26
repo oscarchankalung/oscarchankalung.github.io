@@ -21,8 +21,11 @@ code {
 	monospace;
 }
 body {
-	display: flex;
+	max-width: 1000px;
+	margin: auto;
 	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
 }
 a {
 	text-decoration: none;
@@ -37,7 +40,7 @@ a {
 	z-index: 99;
 }
 nav {
-	width: 250px;
+	width: 200px;
 	height: 100vh;
 	border-right: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: white;
@@ -68,9 +71,6 @@ nav .nav-icon {
 nav ul {
 	padding: 25px;
 	list-style: none;
-}
-nav li {
-	margin: 0;
 }
 nav a {
 	display: block;
@@ -120,7 +120,8 @@ nav a:hover {
 /* doc */
 
 #main-doc {
-	min-width: 550px;
+	min-width: 600px;
+	max-width: 800px;
 	padding: 0 25px 25px 25px;
 	font-size: 1.5rem;
 	line-height: 2.2rem;
@@ -145,6 +146,7 @@ nav a:hover {
 		min-width: 100%;
 	}
 }
+
 /* doc code */
 
 #main-doc pre {
@@ -175,11 +177,3 @@ nav a:hover {
 	background: transparent;
 	padding: 0;
 }
-
-
-
-
-
-
-
-
