@@ -203,7 +203,7 @@ nav #navigate .button:hover {
 }
 @media (min-width: 700px) and (max-width: 1100px) {
   #register h1 {
-    font-size: calc(40px + (60-40) * ((100vw - 700px) / (1100-700)));
+    font-size: calc(40px + (60 - 40) * ((100vw - 700px) / (1100 - 700)));
   }
 }
 @media (max-width: 600px) {
