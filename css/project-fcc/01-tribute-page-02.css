@@ -63,22 +63,20 @@ html {
 #img-div {
   /*center*/
   display: flex;
-  justify-content: center;
   margin: 0px auto;
   max-width: 800px;
-  width: 100%;
-  height: auto;
+  max-height: 520px
 }
 #black-profile {
   /*responsive*/
   width: 50%;
-  flex: 1 0 auto;
+  object-fit: cover;
   transform: scaleX(-1);
 }
 #red-profile {
   /*responsive*/
   width: 50%;
-  flex: 1 0 auto;
+  object-fit: cover;
 }
 #img-caption {
   color: black;
