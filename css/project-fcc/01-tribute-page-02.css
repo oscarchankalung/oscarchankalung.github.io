@@ -72,13 +72,13 @@ html {
 #black-profile {
   /*responsive*/
   width: 50%;
-  height: auto;
+  flex: 1 0 auto;
   transform: scaleX(-1);
 }
 #red-profile {
   /*responsive*/
   width: 50%;
-  height: auto;
+  flex: 1 0 auto;
 }
 #img-caption {
   color: black;
