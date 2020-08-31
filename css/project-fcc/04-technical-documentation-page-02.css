@@ -104,7 +104,7 @@ header #navigation ul,
 header #navigation a,
 header #navigation span {
 	color: white;
-	font-size: 14px;
+	font-size: 14px !important;
 }
 header #navigation a {
 	display: inline-block;
