@@ -65,7 +65,9 @@ html {
   display: flex;
   margin: 0px auto;
   max-width: 800px;
-  max-height: 520px
+  max-height: 520px;
+  width: 100%;
+  height: auto;
 }
 #black-profile {
   /*responsive*/
