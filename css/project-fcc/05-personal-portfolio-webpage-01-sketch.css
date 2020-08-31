@@ -1,0 +1,75 @@
+/* default */
+
+:root {
+--highlight: mistyrose;
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: Inter, 
+	-apple-system, BlinkMacSystemFont,
+	"Segoe UI", "Roboto", "Oxygen", "Ubuntu", 
+	"Cantarell", "Fira Sans", "Droid Sans", 
+	"Helvetica Neue", "Arial", "sans-serif";
+}
+code {
+	font-family: SFMono-Regular,Menlo,Monaco,
+	Consolas,"Liberation Mono","Courier New",
+	monospace;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+section {
+	padding: 30px;
+}
+
+/* header */
+
+header nav {}
+header ul {}
+header li {}
+
+/* welcome */
+
+.welcome-section .welcome-div {}
+.welcome-section h1 {}
+.welcome-section p {}
+
+/* projects */
+
+.projects-section .projects-div {}
+.projects-section h1 {}
+.projects-section #project-tiles {}
+.projects-section #project-tiles #project-tile {}
+.projects-section #project-tiles #project-tile img {}
+.projects-section #project-tiles #project-tile h3 {}
+.projects-section #project-all
+
+/* contact */
+
+.contact-section .contact-div {}
+.contact-section h1 {}
+.contact-section h3 {}
+
+/* footer */
+
+footer .footer-div {}
+footer p {}
+
+
+
+
+
+
+
+
+
