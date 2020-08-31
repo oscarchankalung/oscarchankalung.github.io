@@ -47,16 +47,25 @@ section+section {
 h1 {
 	font-size: 42px;
 	font-weight: 500;
+	text-align: center;
 }
 h3 {
 	font-size: 32px;
 	font-weight: normal;
+	text-align: center;
 }
 p, a {
 	font-size: 16px;
 	font-weight: normal;
 }
-
+@media (max-width: 700px) {
+	h1 {
+		font-size: 32px;
+	}
+	h3 {
+		font-size: 26px;
+	}
+}
 /* layout */
 
 header {
@@ -76,7 +85,9 @@ header {
 
 header nav {
 	display: flex;
+	align-items: center;
 	justify-content: flex-end;
+	width: 100%;
 	height: 80px;
 	padding: 18px 30px;
 	background-color: white;
@@ -86,7 +97,6 @@ header nav {
 header ul {
 	display: flex;
 	flex-direction: row;
-	margin-left: auto;
 }
 header li {
 	padding: 10px 14px;
@@ -96,6 +106,11 @@ header li+li {
 }
 header li:hover {
 	background: var(--highlight);
+}
+@media (max-width: 700px) {
+	header nav {
+		justify-content: center;
+	}
 }
 
 /* welcome */
@@ -113,12 +128,20 @@ header li:hover {
 	padding: 30px 0px;
 }
 #welcome-section h1 {
-	margin-bottom: 16px;
+	margin-bottom: 32px;
 }
 #welcome-section h1,
 #welcome-section h3 {
+	line-height: 46px;
+}
+#welcome-section span {
+	background-color: var(--highlight);
 	padding: 8px 12px;
-	background: var(--highlight);
+	word-wrap: break-word;
+	-webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 /* projects */
@@ -135,7 +158,7 @@ header li:hover {
 }
 #projects-section .project-tiles {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(332px, 432px));
+	grid-template-columns: repeat(2, minmax(auto, 432px));
 	grid-column-gap: 40px;
 	grid-row-gap: 36px;
 	margin-bottom: 42px;
@@ -181,7 +204,15 @@ header li:hover {
 	background: var(--highlight);
 	border-color: var(--main-light);
 }
-
+@media (max-width: 700px) {
+	#projects-section .project-tiles {
+		grid-template-columns: minmax(auto, 432px);
+		grid-row-gap: 18px;
+	}
+	#projects-section h1 {
+		margin-bottom: 46px;
+	}
+}
 /* contact */
 
 #contact-section {
@@ -226,6 +257,18 @@ header li:hover {
 	border-color: var(--main-light);
 	background: var(--highlight);
 }
+@media (max-width: 700px) {
+	#contact-section {
+		height: calc(100vh - 80px);
+	}
+	#contact-section .contact-links {
+		flex-direction: column;
+	}
+	#contact-section .contact-links .contact-link + .contact-link {
+		margin-left: 0px;
+		margin-top: 24px;
+	}
+}
 
 /* footer */
 
@@ -240,4 +283,13 @@ footer #footer-div {
 	justify-content: space-between;
 	height: 80px;
 	padding: 30px 0px;
+}
+@media (max-width: 700px) {
+	footer #footer-div {
+		flex-direction: column;
+		height: auto;
+	}
+	footer #footer-div p + p {
+		margin-top: 12px;
+	}
 }
