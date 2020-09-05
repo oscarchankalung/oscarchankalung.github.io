@@ -1,0 +1,45 @@
+/* default */
+
+:root {
+--main-light: white;
+--main-dark: black;
+--highlight-about: rgb(255, 230, 225); /*pestal-red*/
+--highlight-portfolio: rgb(255, 250, 210); /*pestal-yellow*/
+--highlight-projects: rgb(215, 255, 230); /*pestal-green*/
+--highlight-gallery: rgb(205, 230, 255); /*pestal-blue*/
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: Inter, 
+	-apple-system, BlinkMacSystemFont,
+	"Segoe UI", "Roboto", "Oxygen", "Ubuntu", 
+	"Cantarell", "Fira Sans", "Droid Sans", 
+	"Helvetica Neue", "Arial", "sans-serif";
+}
+code {
+	font-family: SFMono-Regular,Menlo,Monaco,
+	Consolas,"Liberation Mono","Courier New",
+	monospace;
+}
+
+/* section */
+
+#projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	border-top: 1px solid black;
+}
+#projects h2 {
+	margin-bottom: 24px;
+}
+
+
