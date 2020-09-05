@@ -1,10 +1,10 @@
 # About
 
-* navbar
-* photo
-* statement
-* update
-* contact
+* [navbar](#navbar)
+* [photo](#photo)
+* [statement](#statement)
+* [update](#update)
+* [contact](#contact)
 
 ## navbar
 
@@ -15,7 +15,9 @@
 
 ## photo
 
-![profile picture](img/profile_square.jpg)
+<p align="left">
+    <img src="img/profile_square.jpg" alt="profile picture" width="150" height="150">
+</p>
 
 ## statement
 

@@ -1,0 +1,80 @@
+/* default */
+
+:root {
+--main-light: white;
+--main-dark: black;
+--highlight-about: rgb(255, 230, 225); /*pestal-red*/
+--highlight-portfolio: rgb(255, 250, 210); /*pestal-yellow*/
+--highlight-projects: rgb(215, 255, 230); /*pestal-green*/
+--highlight-gallery: rgb(205, 230, 255); /*pestal-blue*/
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: Inter, 
+	-apple-system, BlinkMacSystemFont,
+	"Segoe UI", "Roboto", "Oxygen", "Ubuntu", 
+	"Cantarell", "Fira Sans", "Droid Sans", 
+	"Helvetica Neue", "Arial", "sans-serif";
+}
+code {
+	font-family: SFMono-Regular,Menlo,Monaco,
+	Consolas,"Liberation Mono","Courier New",
+	monospace;
+}
+
+/* layout */
+
+section {
+	height: 100vh;
+	padding: 30px 0px;
+}
+section + section {
+	border-top: 1px solid black;
+}
+h2 {
+	margin-bottom: 32px;
+}
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* color */
+
+#color .flex-column + .flex-column {
+	margin-left: 30px;
+}
+#color code + code {
+	margin-top: 36px;
+}
+#color code {
+	display: block
+	font-weight: 500;
+	font-size: 24px;
+	text-align: center;
+}
+#color span {
+	display: inline-block;
+	padding: 8px 12px;
+	word-wrap: break-word;
+	-webkit-box-decoration-break: clone;
+	-ms-box-decoration-break: clone;
+	-o-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
+/* projects */
