@@ -7,45 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Oscar Chan | 陳嘉隆</title>
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/318a6450cb.js" crossorigin="anonymous"></script>
   </head>
 
 <body>
 
-<section id="projects">
+<header>
+	<nav id="navbar">
+		<div id="nav-head">
+			<div id="nav-cube">
+				<img alt="icon umbrella" id="nav-icon"
+					 src="img/navbar-icon/icon-umbrella-thick-unfold.png">
+			</div>
+		</div>
+		<div id="nav-list">
+			<a href="index.html" class="current">About 關於</a>
+			<a href="portfolio/index.html">Portfolio 履歷</a>
+			<a href="projects/index.html">Projects 專案</a>
+			<a href="gallery/index.html">Gallery 相簿</a>
+		</div>
+	</nav>
+</header>
 
-<h2>freeCodeCamp Projects</h2>
+<main>
+	<section id="about">
+		<div id="photo">
+			<img id="profile-picture" src="img/profile-square.jpg" alt="oscar chan profile picture">
+		</div>
+		<div id="language">
+			<span id="language-buttons">
+				<button class="language-button english">EN</button>
+				<button class="language-button chinese visible">中</button>
+			</span>
+		</div>
+		<div id="introduction">
+			<div class="english introduction">
+				<div id="english-statement">
+					<h3>Hello, I'm Oscar Chan.</h3>
+					<p>I’m a self-taught programmer switching careers into web development. As a technical business analyst in <a href="https://www.macquarie.com/hk/en.html" target="_blank">Macquarie</a>, I successfully adopted new technologies such as Alteryx to drive office automation, saving 1200 working hours annually.  I've taken various programming courses and worked in a full development life cycle. Now, I am seeking new challenges in a more technical and flexible environment.</p>
+				</div>
+				<div id="english-update">
+					<h3>Latest (2020-09-02)</h3>
+					<p>Learning web development through <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>, <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">MDN - Learn web development</a> and <a href="https://roadmap.sh/frontend" target="_blank">Developer Roadmaps - Frontend</a>.</p>
+				</div>
+			</div>
+			<div class="chinese introduction visible">
+				<div id="chinese-statement">
+					<h3>你好，我是陳嘉隆。</h3>
+					<p>我是一位自學程序員，正轉行做網絡開發。在 <a href="https://www.macquarie.com/hk/en.html" target="_blank">Macquarie</a> 擔任 Technical Business Analyst 時，我成功採用 Alteryx 等新技術推動辦公自動化，每年節省 1200 個工作小時。我參加過各種編程課程，並參與過完整的軟件生命週期。現在，我正尋求新的挑戰，希望在技術性和靈活性更高的環境中工作。</p>
+				</div>
+				<div id="chinese-update">
+					<h3>近況 (2020年9月2日)</h3>
+					<p>正在 <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>、<a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">MDN - Learn web development</a> 及 <a href="https://roadmap.sh/frontend" target="_blank">Developer Roadmap - Frontend</a> 上學習網絡開發。</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
 
-<ul>
-	<li><a target="_blank" href="projects/fcc/01-tribute-page-01">
-		Tribute Page 01
-	</a></li>
-	<li><a target="_blank" href="projects/fcc/01-tribute-page-02">
-		Tribute Page 02
-	</a></li>
-	<li><a target="_blank" href="projects/fcc/02-survey-form-01">
-		Survey Form 01
-	</a></li>
-	<li><a target="_blank" href="projects/fcc/02-survey-form-02">
-		Survey Form 02
-	</a></li>
-	<li><a target="_blank" href="projects/fcc/03-product-landing-page-01">
-		Product Landing Page 01
-	</a></li>
-	<li><a target="_blank" href="projects/fcc/03-product-landing-page-02">
-		Product Landing Page 02
-	</a></li>
-	<li><a target="_blank" href="projects/fcc/04-technical-documentation-page-01">
-		Technical Documentation Page 01
-	</a></li>
-	<li><a target="_blank" href="projects/fcc/04-technical-documentation-page-02">
-		Technical Documentation Page 02
-	</a></li>
-	<li><a target="_blank" href="projects/fcc/05-personal-portfolio-webpage">
-		Personal Portfolio Webpage 01 (Temporary)
-	</a></li>
-</ul>
-
-</section>
+<footer>
+	<div id=contacts>
+		<li><p>Find me at</p></li>
+		<li><a href="github.com/oscarchankalung" target="_blank"><i class="icon fab fa-github"></i></a></li>
+		<li><a href="linkedin.com/in/oscarchankalung" target="_blank"><i class="icon fab fa-linkedin-in"></i></a></li>
+		<li><a href="mailto:oscarchankalung@gmail.com" target="_blank"><i class="icon far fa-envelope"></i></a></li>
+	</div>
+</footer>
 
 </body>
 
