@@ -7,10 +7,10 @@
 
 * Background
 * Text 
-* About: Pastel Red <span style="background-color: rgb(255, 230, 225)">Hello World</span>
-* Portfolio: Pastel Yellow <span style="background-color: rgb(255, 250, 210)">Hello World</span>
-* Projects: Pastel Green <span style="background-color: rgb(215, 255, 230)">Hello World</span>
-* Gallery: Pastel Blue <span style="background-color: rgb(205, 230, 255)">Hello World</span>
+* About: Pastel Red <span style="background-color: rgb(255, 230, 225)">&nbsp;Hello World&nbsp;</span>
+* Portfolio: Pastel Yellow <span style="background-color: rgb(255, 250, 210)">&nbsp;Hello World&nbsp;</span>
+* Projects: Pastel Green <span style="background-color: rgb(215, 255, 230)">&nbsp;Hello World&nbsp;</span>
+* Gallery: Pastel Blue <span style="background-color: rgb(205, 230, 255)">&nbsp;Hello World&nbsp;</span>
 
 ````
 --main-light: white;

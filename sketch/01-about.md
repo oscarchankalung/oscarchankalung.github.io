@@ -16,7 +16,7 @@
 ## photo
 
 <p align="left">
-    <img src="img/profile_square.jpg" alt="profile picture" width="150" height="150">
+    <img src="../img/profile-square.jpg" alt="profile picture" width="150" height="150">
 </p>
 
 ## statement
