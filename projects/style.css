@@ -3,10 +3,10 @@
 :root {
 --main-light: white;
 --main-dark: black;
---highlight-about: rgb(255, 230, 225);
---highlight-portfolio: rgb(255, 250, 210);
---highlight-projects: rgb(215, 255, 230);
---highlight-gallery: rgb(205, 230, 255);
+--highlight-about: rgb(205, 230, 255);
+--highlight-portfolio: rgb(255, 230, 225);
+--highlight-projects: rgb(255, 250, 210);
+--highlight-gallery: rgb(215, 255, 230);
 }
 *,
 *::before,
@@ -62,7 +62,7 @@ p, a {
 }
 @media (max-width: 700px) {
 	h1 {
-		font-size: 32px;
+		font-size: 30px;
 	}
 	h3 {
 		font-size: 26px;
@@ -134,9 +134,17 @@ footer {
 	color: var(--main-dark);
 	border-radius: 5px;
 }
-#navbar #nav-list a:hover,
-#navbar #nav-list a.current {
-	background-color: var(--highlight-projects);
+#navbar #nav-list a#nav-about {
+	background-color: var(--highlight-about);	
+}
+#navbar #nav-list a#nav-portfolio {
+	background-color: var(--highlight-portfolio);	
+}
+#navbar #nav-list a#nav-projects {
+	background-color: var(--highlight-projects);	
+}
+#navbar #nav-list a#nav-gallery {
+	background-color: var(--highlight-gallery);	
 }
 #navbar #nav-list a + a {
 	margin-left: 16px;
@@ -255,7 +263,7 @@ footer {
 		grid-row-gap: 18px;
 	}
 	#projects-section h1 {
-		margin-bottom: 46px;
+		margin-bottom: 30px;
 	}
 }
 
