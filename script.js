@@ -11,8 +11,8 @@ window.onload = function() {
 			navTrigger.classList.toggle('invisible');
 			navContent.classList.toggle('invisible');
 			navContent.classList.contains('invisible')
-			? navTrigger.src = 'img/navbar-icon/icon-umbrella-thick-fold.png'
-			: navTrigger.src = 'img/navbar-icon/icon-umbrella-thick-unfold.png';
+			? navTrigger.src = 'https://oscarchankalung.github.io/img/navbar-icon/icon-umbrella-thick-fold.png'
+			: navTrigger.src = 'https://oscarchankalung.github.io/img/navbar-icon/icon-umbrella-thick-unfold.png';
 		}
 	});
 
@@ -22,13 +22,13 @@ window.onload = function() {
 		if (width > 700) {
 			navContent.classList.remove('invisible');
 			navTrigger.classList.remove('invisible');
-			navTrigger.src = 'img/navbar-icon/icon-umbrella-thick-unfold.png';
+			navTrigger.src = 'https://oscarchankalung.github.io/img/navbar-icon/icon-umbrella-thick-unfold.png';
 		}
 		// show navbar when device width <= 700
 		if (width <= 700) {
 			navContent.classList.add('invisible');
 			navTrigger.classList.add('invisible');
-			navTrigger.src = 'img/navbar-icon/icon-umbrella-thick-fold.png';
+			navTrigger.src = 'https://oscarchankalung.github.io/img/navbar-icon/icon-umbrella-thick-fold.png';
 		}
 	}
 	window.addEventListener('resize', dynamicNavbar);
