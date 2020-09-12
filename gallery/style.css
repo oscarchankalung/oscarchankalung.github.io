@@ -186,6 +186,10 @@ footer {
 	#construction {
 		padding: 40px 30px;
 	}
+	#construction #inconvenience {
+		max-height: 100%;
+		height: auto;
+	}
 }
 
 /* contacts */
