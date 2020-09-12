@@ -27,10 +27,8 @@ code {
 	Consolas,"Liberation Mono","Courier New",
 	monospace;
 }
-body {
+body, a, a:visited {
 	color: var(--main-dark);
-}
-a, a:visited {
 	text-decoration: none;
 }
 a:hover {
@@ -167,7 +165,7 @@ footer {
 
 /* construction */
 
-#construction {
+#download {
 	max-width: 900px;
 	height: 100%;
 	margin-left: auto;
@@ -178,9 +176,16 @@ footer {
 	align-items: center;
 	justify-content: center;
 }
-
-#construction #inconvenience {
-	max-height: 360px;
+#download #button {
+	font-size: 24px;
+	font-weight: 500;
+	padding: 12px 16px;
+	border: 2px solid rgba(0,0,0,1);
+	border-radius: 5px;
+}
+#download #button:hover {
+	background-color: var(--highlight-portfolio);
+	border-color: var(--highlight-portfolio);
 }
 @media (max-width: 700px) {
 	#construction {
