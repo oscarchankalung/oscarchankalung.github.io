@@ -8,6 +8,8 @@
 
 ## Issues - To Do
 
-1. Create "Projects/Biology"
-2. Create "Gallery"
-3. Use API instead for Noun Project Icon
+1. Provide more content on "Portfolio" (Skills, Work Experience, Education and Links)
+2. Provide more content on "Projects/freeCodeCamp" (Purpose and Technology)
+2. Create "Projects/Biology"
+3. Create "Gallery"
+4. Use API instead for Noun Project Icon
