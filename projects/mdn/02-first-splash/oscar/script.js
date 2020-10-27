@@ -48,8 +48,12 @@ function submitGuess(event) {
 }
 
 function stopGame() {
+
+  // disable form
   formNumber.setAttribute("disabled", true);
   formSubmit.setAttribute("disabled", true);
+
+  // create button "outputReset"
   outputReset = document.createElement("button");
   outputReset.textContent = "Start new game";
   outputHint.parentNode.appendChild(outputReset);
@@ -59,17 +63,20 @@ function stopGame() {
 
 function resetGame() {
 
+  // reset output elements
   outputGuesses.textContent = "";
   outputResult.textContent = "";
   outputHint.textContent = "";
   outputReset.parentNode.removeChild(outputReset);
   outputResult.style.background = "white";
 
+  // reset form elements
   formNumber.removeAttribute("disabled");
   formSubmit.removeAttribute("disabled");
   formNumber.value = null;
   formNumber.focus();
 
+  // reset answer and guess
   answer = Math.floor(Math.random() * 100) + 1;
   guesses = [];
   console.log("answer", answer);
