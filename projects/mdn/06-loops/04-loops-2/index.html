@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Loops: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <label for="search">Search by name:</label>
+    <input id="search" type="text">
+    <button>Search</button>
+    <section class="preview"></section>
+  </body>
+
+  <script>
+
+    const input = document.querySelector('input');
+    const btn = document.querySelector('button');
+    const section = document.querySelector('section');
+    const phonebook = [
+      { name : 'Chris', number : '1549' },
+      { name : 'Li Kang', number : '9634' },
+      { name : 'Anne', number : '9065' },
+      { name : 'Francesca', number : '3001' },
+      { name : 'Mustafa', number : '6888' },
+      { name : 'Tina', number : '4312' },
+      { name : 'Bert', number : '7780' },
+      { name : 'Jada', number : '2282' },
+    ]
+
+    input.focus();
+    btn.addEventListener('click', toggleButton);
+    input.addEventListener('keyup', toggleInput);
+
+    function toggleButton() {
+      searchPhonebook();
+    }
+
+    function toggleInput(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        searchPhonebook();
+      }
+    }
+
+    function searchPhonebook() {
+      let para = document.createElement('p');
+      let name = input.value.toLowerCase().replace(/(^|\s)\S/g, L => L.toUpperCase() );
+
+      console.log(name);
+      for (let contact of phonebook) {
+        if (contact.namel === name) {
+          para.textContent = `${contact.name}'s number is ${contact.number}.`
+          break;
+        } else {
+          para.textContent = `${name} is not found.`
+        }
+      }
+
+      input.value = '';
+      input.focus();
+      section.appendChild(para);
+    }
+
+  </script>
+
+</html>
