@@ -46,10 +46,9 @@
       return Math.cbrt(num);
     }
 
-    input.value = '';
     input.focus();
 
-    input.onchange = function() {
+    input.oninput = function(event) {
       const num = input.value;
       if (isNaN(num)) {
         para.textContent = 'You need to enter a number!';
@@ -61,8 +60,6 @@
                            num + ' square root is ' + squareRoot(num) + '.' + '\n' +
                            num + ' cube root is ' + cubeRoot(num) + '.';
       }
-      input.value = '';
-      input.focus();
     }
   </script>
 </body>
