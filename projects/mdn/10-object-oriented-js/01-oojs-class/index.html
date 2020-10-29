@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Object-oriented JavaScript class example</title>
+  </head>
+
+  <body>
+    <p>
+      This example requires you to enter commands in your browser's JavaScript console (see <a href="
+      https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">
+      What are browser developer tools</a> for more information).
+    </p>
+
+  </body>
+
+    <script>
+      // the output always includes the pronoun "He"
+      // the bio only includes two interests
+      function Person(first, last, age, gender, interests) {
+        this.name = {
+          'first': first,
+          'last' : last
+        };
+        this.age = age;
+        this.gender = gender.toLowerCase();
+        this.interests = interests.map(item => item.toLowerCase());
+        this.bio = function() {
+          let string = this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. ';
+
+          if (this.gender === 'male' || this.gender === 'm') {
+            string += 'He likes ';
+          } else if (this.gender === 'female' || this.gender === 'f') {
+            string += 'She likes ';
+          } else {
+            string += 'They likes ';
+          }
+
+          if (this.interests.length === 1) {
+            string += this.interests[0] + '.';
+          } else if (this.interests.length === 2) {
+            string += this.interests[0] + ' and ' + this.interests[1] + '.';
+          } else {
+            for (let i = 0; i < this.interests.length; i++) {
+              if (i < this.interests.length - 1) {
+                string += this.interests[i] + ', ';
+              } else {
+                string += 'and ' + this.interests[i] + '.'
+              }
+            }
+          }
+          alert(string);
+        };
+        this.greeting = function() {
+          alert('Hi! I\'m ' + this.name.first + '.');
+        };
+      };
+
+      let person0 = new Person('Bob', 'Smith', 32, 'male', ['music']);
+      let person1 = new Person('Oscar', 'Chan', 25, 'male', ['coding', 'diving']);
+      let person2 = new Person('Catherine', 'Splendore', 26, 'female', ['teaching', 'singing', 'smoking']);
+
+      person0.greeting();
+      person0.bio();
+      person1.greeting();
+      person1.bio();
+      person2.greeting();
+      person2.bio();
+    </script>
+</html>
