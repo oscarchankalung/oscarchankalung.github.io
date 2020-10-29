@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random color example — event handler property</title>
+    <style>
+      button {
+        display: block;
+        margin: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+  </body>
+
+  <script>
+    const btnProperty = [
+      {text: 'Change color on click', event: 'onclick'},
+      {text: 'Change color on focus (get focus)', event: 'onfocus'},
+      {text: 'Change color on blur (lose focus)', event: 'onblur'},
+      {text: 'Change color on key press', event: 'onkeypress'},
+      {text: 'Change color on key down', event: 'onkeydown'},
+      {text: 'Change color on key up', event: 'onkeyup'},
+      {text: 'Change color on mouse over', event: 'onmouseover'},
+      {text: 'Change color on mouse out', event: 'onmouseout'}
+    ]
+
+    for (property of btnProperty) {
+      const btn = document.createElement('button');
+      btn.textContent = property.text;
+      btn[property.event] = bgChange;
+      document.body.appendChild(btn);
+
+    }
+
+    function random(number) {
+      return Math.floor(Math.random()*number);
+    }
+
+    function bgChange(event) {
+      console.log(`Button ${event.type} triggered.`);
+      const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+      document.body.style.backgroundColor = rndCol;
+    }
+  </script>
+</html>
