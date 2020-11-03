@@ -28,13 +28,16 @@ while (balls.length < 25) {
     random(2,7) * randomSign(),
     size,
     `rgb(${random(0,255)}, ${random(0,255)}, ${random(0,255)})`,
+    width,
+    height
   );
   balls.push(ball);
   para.textContent = 'Ball count: ' + balls.length;
 }
+
 // create evilCircle
 
-const evilCircle = new EvilCircle();
+const evilCircle = new EvilCircle(width, height);
 evilCircle.setControls();
 
 // update frame
@@ -44,14 +47,14 @@ function loop() {
   ctx.fillRect(0, 0, width, height);
 
   for (let i = 0; i < balls.length; i++) {
-    balls[i].draw();
-    balls[i].update();
-    balls[i].collisionDetect();
+    balls[i].draw(ctx);
+    balls[i].update(width, height);
+    balls[i].collisionDetect(balls);
   }
 
-  evilCircle.draw();
-  evilCircle.checkBounds();
-  evilCircle.collisionDetect();
+  evilCircle.draw(ctx);
+  evilCircle.checkBounds(width, height);
+  evilCircle.collisionDetect(balls);
   requestAnimationFrame(loop);
 }
 loop();
