@@ -206,69 +206,57 @@ footer {
 /* projects */
 
 #projects-section #projects-div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	max-width: 1020px;
+	margin: 0 auto;
 	padding: 50px 0px;
 }
+@media (max-width: 1100px) {
+	#projects-section #projects-div {
+		max-width: 700px;
+	}
+}
+@media (max-width: 750px) {
+	#projects-section #projects-div {
+		max-width: 350px;
+	}
+}
+
+/* projects > .projects-directory */
+
 #projects-section h1 {
 	margin-bottom: 60px;
 }
-#projects-section .project-tiles {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(auto, 432px));
-	grid-column-gap: 40px;
-	grid-row-gap: 36px;
+#projects-section .projects-directory {
+	column-width: 320px;
+	column-gap: 30px;
+	column-fill: balance;
+	column-rule: 2px solid black;
 }
-#projects-section .project-tiles .project-tile {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: auto;
+#projects-section .projects-directory .folder {
+	font-weight: bold;
+	break-inside: avoid;
+	max-width: 320px;
 }
-#projects-section .project-tiles .project-tile img {
-	border: 2px solid var(--main-dark);
-	width: 100%;
+#projects-section .projects-directory .folder + .folder {
+	margin-top: 30px;
 }
-#projects-section .project-tiles .project-tile .project-tile-title {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	padding: 16px 0px;
-	margin-top: 6px;
+#projects-section .projects-directory .subfolder {
+	margin: 10px 0px;
 }
-#projects-section .project-tiles .project-tile span {
-	color: var(--main-light);
+#projects-section .projects-directory li {
+	margin-left: 20px;
 }
-#projects-section .project-tiles .project-tile h3,
-#projects-section .projects-all a {
-	font-size: 18px;
-	font-weight: 500;
+#projects-section .projects-directory a {
+	color: #0366d6;
 }
-#projects-section .projects-all {
-	padding: 12px 18px;
-	border: 2px solid var(--main-dark);
-}
-#projects-section .project-tiles .project-tile:hover img {
-	box-shadow: 0 0 5px 2px #80bdff;
-}
-#projects-section .project-tiles .project-tile:hover span {
-	color: var(--main-dark);
-}
-#projects-section .projects-all:hover {
-	background: var(--highlight);
-	border-color: var(--main-light);
+@media (max-width: 400px) {
+	#projects-section .projects-directory code {
+		font-size: 14px;
+	}
 }
 @media (max-width: 700px) {
 	#projects-section #projects-div {
 		padding: 30px 0px;
-	}
-	#projects-section .project-tiles {
-		grid-template-columns: minmax(auto, 432px);
-		grid-row-gap: 18px;
 	}
 	#projects-section h1 {
 		margin-bottom: 30px;
