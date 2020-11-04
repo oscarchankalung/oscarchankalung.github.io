@@ -14,7 +14,9 @@ async function getRequest() {
 }
 
 async function getRepos(contents) {
+  console.log(contents);
   for (content of contents) {
+    if (content.type === 'file' && content.size === 0)
     repos.push({name: content.name, html: content._links.html});
   }
   console.log(repos);
