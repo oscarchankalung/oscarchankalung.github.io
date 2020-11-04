@@ -1,0 +1,9 @@
+[submodule "projects/other/Monthly-Expense-Data-Pipeline"]
+	path = projects/other/Monthly-Expense-Data-Pipeline
+	url = https://github.com/oscarchankalung/Monthly-Expense-Data-Pipeline
+[submodule "projects/other/Coderbunker-Freelancers-Monthly-Income-By-Project"]
+	path = projects/other/Coderbunker-Freelancers-Monthly-Income-By-Project
+	url = https://github.com/oscarchankalung/Coderbunker-Freelancers-Monthly-Income-By-Project
+[submodule "projects/other/Scratch-Scoreboard"]
+	path = projects/other/Scratch-Scoreboard
+	url = https://github.com/oscarchankalung/Scratch-Scoreboard
