@@ -1,0 +1,263 @@
+/* default */
+
+:root {
+--main-light: white;
+--main-dark: black;
+--highlight-about: rgb(205, 230, 255);
+--highlight-portfolio: rgb(255, 230, 225);
+--highlight-projects: rgb(255, 250, 210);
+--highlight-gallery: rgb(215, 255, 230);
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: Inter, 
+	-apple-system, BlinkMacSystemFont,
+	"Segoe UI", "Roboto", "Oxygen", "Ubuntu", 
+	"Cantarell", "Fira Sans", "Droid Sans", 
+	"Helvetica Neue", "Arial", "sans-serif";
+}
+code {
+	font-family: SFMono-Regular,Menlo,Monaco,
+	Consolas,"Liberation Mono","Courier New",
+	monospace;
+}
+body {
+	color: var(--main-dark);
+}
+a, a:visited {
+	text-decoration: none;
+	color: var(--main-dark);
+}
+a:hover {
+	cursor: pointer;
+}
+ul {
+	list-style: none;
+}
+section {
+	margin: 0px 30px;
+}
+
+/* text */
+
+h1 {
+	font-size: 42px;
+	font-weight: 500;
+	text-align: center;
+}
+@media (max-width: 700px) {
+	h1 {
+		font-size: 30px;
+	}
+}
+/* layout */
+
+header {
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header {
+	width: 100%;
+	min-height: 80px;
+}
+main {
+	width: 100%;
+	min-height: calc(100vh - 80px - 80px);
+	margin-top: 80px;
+}
+footer {
+	width: 100%;
+	height: 80px;
+}
+
+/* navbar */
+
+#navbar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+#navbar {
+	width: 100%;
+	height: 100%;
+	padding: 0px 30px;
+	background-color: var(--main-light);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+}
+#navbar #nav-head {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+}
+#navbar #nav-head #nav-icon {
+	width: 48px;
+	height: 48px;
+	padding: 10px;
+	transform: rotate(-20deg);
+	background-color: var(--highlight-projects);
+	border-radius: 50%;
+}
+#navbar #nav-list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+}
+#navbar #nav-list a {
+	font-size: 16px;
+	font-weight: 500;
+	padding: 10px 12px;
+	color: var(--main-dark);
+	border-radius: 5px;
+}
+#navbar #nav-list a#nav-about {
+	background-color: var(--highlight-about);	
+}
+#navbar #nav-list a#nav-portfolio {
+	background-color: var(--highlight-portfolio);	
+}
+#navbar #nav-list a#nav-projects {
+	background-color: var(--highlight-projects);	
+}
+#navbar #nav-list a#nav-gallery {
+	background-color: var(--highlight-gallery);	
+}
+#navbar #nav-list a + a {
+	margin-left: 16px;
+}
+@media (max-width: 700px) {
+	#navbar {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 0px;
+	}
+	#navbar {
+		border-bottom: none;
+		box-shadow: none;
+	}
+	#navbar #nav-head {
+		justify-content: flex-start;
+	}
+	#navbar #nav-head {
+		width: 100%;
+		padding: 0px 30px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+	}
+	#navbar #nav-head #nav-icon {
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+		border-bottom: 2px solid rgba(0,0,0,0.1);
+		transition: .5s;
+	}
+	#navbar #nav-head #nav-icon:active {
+		border-bottom: none;
+	}
+	#navbar #nav-head #nav-icon:hover {
+		cursor: pointer;
+	}
+	#navbar #nav-list {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	#navbar #nav-list {
+		width: 100%;
+		height: auto;
+		padding: 24px 30px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+	}
+	#navbar #nav-list a + a {
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+}
+@media (max-width: 700px) {
+	#navbar #nav-list.invisible {
+		display: none !important;
+	}
+}
+
+/* projects */
+
+#projects-section #projects-div {
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 120px 30px;
+}
+@media (max-width: 700px) {
+	#projects-section #projects-div {
+		padding: 40px 30px;
+	}
+}
+
+/* projects > .projects-directory */
+
+#projects-section h1 {
+	margin-bottom: 60px;
+}
+#projects-section div + div {
+	margin-top: 40px;
+}
+#projects-section .projects-directory code {
+	display: block;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+#projects-section .projects-directory p {
+	font-size: 20px;
+}
+#projects-section .projects-directory a {
+	color: #0366d6;
+}
+
+
+/* contacts */
+
+#contacts {
+	width: 100%;
+	height: 100%;
+	padding: 0px 30px;
+	background-color: var(--main-light);
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+#contacts {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+#contacts p {
+	font-size: 16px;
+	font-weight: bold;
+}
+#contacts a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#contacts a {
+	font-size: 22px;
+	color: var(--main-dark);
+}
+#contacts li {
+	list-style: none;
+}
+#contacts li + li {
+	margin-left: 14px;
+}
