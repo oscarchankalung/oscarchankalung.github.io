@@ -1,0 +1,87 @@
+/* default */
+
+html, button {
+  font-family: Inter, 
+  -apple-system, BlinkMacSystemFont,
+  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", 
+  "Cantarell", "Fira Sans", "Droid Sans", 
+  "Helvetica Neue", "Arial", "sans-serif";
+  height: 100%;
+}
+body {
+  background-color: red;
+  height: inherit;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* layout */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  height: inherit;
+  padding: 30px;
+}
+section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section > div {
+  width: 260px;
+  margin: 30px;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+}
+
+/* general */
+
+p, button  {
+  display: inline-block;
+  border: 5px solid;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: SFMono-Regular,Menlo,Monaco,
+  Consolas,"Liberation Mono","Courier New",
+  monospace;
+}
+.p1 {
+  border-color: yellow;
+  color: yellow;
+}
+.p2 {
+  border-color: cyan;
+  color: cyan;
+}
+
+/* button-specific */
+
+button {
+  background-color: #fff;
+  cursor: pointer;
+}
+button:hover, button:focus, button:active {
+  background-color: #eee;
+}
+
+/* spinner-specific */
+
+.spinner {
+  font-size: 8rem;
+}
+
+
+
+
+
