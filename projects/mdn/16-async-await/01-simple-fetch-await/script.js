@@ -15,6 +15,6 @@ async function myFetch(path) {
 }
 
 myFetch('../coffee.jpg')
-.catch(e) {
+.catch(e => {
   console.log(e)
-}
+})
