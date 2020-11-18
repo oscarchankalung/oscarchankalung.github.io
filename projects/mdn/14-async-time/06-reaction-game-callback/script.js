@@ -47,10 +47,10 @@ function setEndgame() {
   function keyHandler(e) {
     let isOver = false;
 
-    if (e.key === 'a') {
+    if (e.key === 'a' || e.key === 'A') {
       result.textContent = 'Player 1 Won!!'
       isOver = true;
-    } else if (e.ley === 'l') {
+    } else if (e.ley === 'l' || e.key === 'L') {
       result.textContent = 'Player 2 Won!!'
       isOver = true;
     }
