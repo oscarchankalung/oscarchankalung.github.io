@@ -3,7 +3,6 @@ async function fetchAndDecode(url) {
   try {
 
     let response = await fetch(url);
-
     let content;
 
     if (!response.ok) {
@@ -23,34 +22,41 @@ async function fetchAndDecode(url) {
   }
 }
 
-async function displayContent() {
+async function displayContent(asset) {
 
-  let coffee = '../coffee.jpg'
-  let tea = '../tea.jpg'
-  let description = '../description.txt'
-  let assets = [coffee, tea, description];
-
-  assets = assets.map(asset => fetchAndDecode(asset));
-
-  assets = await Promise.all(assets);
-    
-  assets.map(asset => {
-    if (typeof asset === 'object') {
-      let objectURL = URL.createObjectURL(asset);
-      let image = document.createElement('img');
-      image.src = objectURL;
-      document.body.appendChild(image);
-    } else if (typeof asset === 'string') {
-      let text = asset;
-      let para = document.createElement('p');
-      para.textContent = text;
-      document.body.appendChild(para);
-    }
-  })
+  if (typeof asset === 'object') {
+    let objectURL = URL.createObjectURL(asset);
+    let image = document.createElement('img');
+    image.src = objectURL;
+    document.body.appendChild(image);
+  } else if (typeof asset === 'string') {
+    let text = asset;
+    let para = document.createElement('p');
+    para.textContent = text;
+    document.body.appendChild(para);
+  }
 
 }
 
-displayContent()
+async function defineAssets() {
+
+  let source = '../'
+  let coffee = 'coffee.jpg'
+  let tea = 'tea.jpg'
+  let description = 'description.txt'
+  let assets = [coffee, tea, description]
+
+  return assets.map(asset => source + asset);
+
+}
+
+defineAssets()
+.then(assets => {
+  return Promise.all(assets.map(asset => fetchAndDecode(asset)))
+})
+.then(urls => {
+  return urls.map(url => displayContent(url))
+})
 .catch(e => {
   console.log(e);
 })
