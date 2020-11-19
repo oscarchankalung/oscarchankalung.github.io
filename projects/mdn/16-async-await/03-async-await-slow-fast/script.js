@@ -31,18 +31,18 @@ async function main_async_await() {
   await test(fastTimeTest);
 }
 
-function main_async_callback() {
+function main_async_then() {
   test(slowTimeTest).then(() => test(fastTimeTest));
 }
 
-function main_sync_callback() {
+function main_sync_then() {
   test(slowTimeTest).then(test(fastTimeTest));
 }
 
 const btn1 = document.querySelector('#main-async-await');
-const btn2 = document.querySelector('#main-async-callback');
-const btn3 = document.querySelector('#main-sync-callback');
+const btn2 = document.querySelector('#main-async-then');
+const btn3 = document.querySelector('#main-sync-then');
 
 btn1.addEventListener('click', main_async_await);
-btn2.addEventListener('click', main_async_callback);
-btn3.addEventListener('click', main_sync_callback);
+btn2.addEventListener('click', main_async_then);
+btn3.addEventListener('click', main_sync_then);
