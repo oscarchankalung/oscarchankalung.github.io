@@ -38,19 +38,14 @@ async function displayContent(asset) {
 
 }
 
-async function defineAssets() {
+let source = '../'
+let coffee = 'coffee.jpg'
+let tea = 'tea.jpg'
+let description = 'description.txt'
+let assets = [coffee, tea, description]
+assets = assets.map(asset => source + asset);
 
-  let source = '../'
-  let coffee = 'coffee.jpg'
-  let tea = 'tea.jpg'
-  let description = 'description.txt'
-  let assets = [coffee, tea, description]
-
-  return assets.map(asset => source + asset);
-
-}
-
-defineAssets()
+Promise.resolve(assets)
 .then(assets => {
   return Promise.all(assets.map(asset => fetchAndDecode(asset)))
 })
