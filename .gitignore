@@ -1,1 +1,11 @@
+#lint
+.eslintrc.json
+.stylelintrc.json
+
+#node
+node_modules
+package-lock.json
+package.json
+
+#other
 .DS_Store
