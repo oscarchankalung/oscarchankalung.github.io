@@ -1,15 +1,15 @@
 class Person {
-  constructor(first, last, age, gender, interests) {
+  constructor (first, last, age, gender, interests) {
     this.name = {
-      'first': first,
-      'last' : last
+      first: first,
+      last: last
     };
     this.age = age;
     this.gender = gender.toLowerCase();
     this.interests = interests.map(item => item.toLowerCase());
   }
 
-  bio() {
+  bio () {
     let string = this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. ';
 
     if (this.gender === 'male' || this.gender === 'm') {
@@ -29,18 +29,18 @@ class Person {
         if (i < this.interests.length - 1) {
           string += this.interests[i] + ', ';
         } else {
-          string += 'and ' + this.interests[i] + '.'
+          string += 'and ' + this.interests[i] + '.';
         }
       }
     }
     alert(string);
   };
 
-  greeting() {
+  greeting () {
     alert('Hi! I\'m ' + this.name.first + '.');
   };
 
-  farewell() {
+  farewell () {
     alert(this.name.first + ' has left the building. Bye for now!');
   };
 };

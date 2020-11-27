@@ -1,6 +1,6 @@
 // Function: creates a new paragraph and appends it to the bottom of the HTML body.
-function createParagraph() {
-  let para = document.createElement('p');
+function createParagraph () {
+  const para = document.createElement('p');
   para.textContent = 'You clicked the button!';
   document.body.appendChild(para);
 }
@@ -9,7 +9,7 @@ function createParagraph() {
 const buttons = document.querySelectorAll('button');
 
 // 2. Loop through all the buttons and add a click event listener to each one.
-for(let i = 0; i < buttons.length ; i++) {
+for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', createParagraph);
 }
 

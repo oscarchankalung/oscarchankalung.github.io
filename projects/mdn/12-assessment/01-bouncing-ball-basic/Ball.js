@@ -1,4 +1,4 @@
-function Ball(x, y, velX, velY, color, size) {
+function Ball (x, y, velX, velY, color, size) {
   this.x = x;
   this.y = y;
   this.velX = velX;
@@ -7,14 +7,14 @@ function Ball(x, y, velX, velY, color, size) {
   this.size = size;
 }
 
-Ball.prototype.draw = function() {
+Ball.prototype.draw = function () {
   ctx.beginPath();
   ctx.fillStyle = this.color;
   ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
   ctx.fill();
-}
+};
 
-Ball.prototype.update = function() {
+Ball.prototype.update = function () {
   if ((this.x + this.size) >= width) {
     this.velX = -(this.velX);
   }
@@ -33,9 +33,9 @@ Ball.prototype.update = function() {
 
   this.x += this.velX;
   this.y += this.velY;
-}
+};
 
-Ball.prototype.collisionDetect = function() {
+Ball.prototype.collisionDetect = function () {
   for (let j = 0; j < balls.length; j++) {
     if (!(this === balls[j])) {
       const dx = this.x - balls[j].x;
@@ -43,8 +43,8 @@ Ball.prototype.collisionDetect = function() {
       const distance = Math.sqrt(dx * dx + dy * dy);
 
       if (distance < this.size + balls[j].size) {
-        balls[j].color = this.color = `rgb(${random(0,255)}, ${random(0,255)}, ${random(0,255)})`;
+        balls[j].color = this.color = `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`;
       }
     }
   }
-}
+};

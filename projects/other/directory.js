@@ -1,30 +1,29 @@
 const directory = document.querySelector('#projects-div');
 
 const owner = 'oscarchankalung';
-const repo = 'oscarchankalung.github.io'
-const path = 'projects/other'
-const href = 'https://oscarchankalung.github.io/'
-const request = `https://api.github.com/repos/${owner}`
+const repo = 'oscarchankalung.github.io';
+const path = 'projects/other';
+const href = 'https://oscarchankalung.github.io/';
+const request = `https://api.github.com/repos/${owner}`;
 
-let repos = [];
+const repos = [];
 
-async function getRequest() {
-  const response = await fetch(`${request}/${repo}/contents/${path}`)
+async function getRequest () {
+  const response = await fetch(`${request}/${repo}/contents/${path}`);
   return response.json();
 }
 
-async function getRepos(contents) {
+async function getRepos (contents) {
   console.log(contents);
   for (content of contents) {
-    if (content.type === 'file' && content.size === 0)
-    repos.push({name: content.name, html: content._links.html});
+    if (content.type === 'file' && content.size === 0) { repos.push({ name: content.name, html: content._links.html }); }
   }
   console.log(repos);
   return repos;
 }
 
-async function getAbout(repos) {
-  for (let i in repos) {
+async function getAbout (repos) {
+  for (const i in repos) {
     const response = await fetch(`${request}/${repos[i].name}`);
     const json = await response.json();
     repos[i].description = await json.description;
@@ -32,8 +31,8 @@ async function getAbout(repos) {
   return repos;
 }
 
-async function createDirectory(repos) {
-  for (let i in repos) {
+async function createDirectory (repos) {
+  for (const i in repos) {
     const div = document.createElement('div');
     const name = document.createElement('h3');
     const anchor = document.createElement('a');
@@ -49,11 +48,11 @@ async function createDirectory(repos) {
     anchor.appendChild(code);
     div.appendChild(name);
     div.appendChild(description);
-    directory.appendChild(div)
+    directory.appendChild(div);
   }
 }
 
 getRequest()
-.then(contents => getRepos(contents))
-.then(repos => getAbout(repos))
-.then(repos => createDirectory(repos))
+  .then(contents => getRepos(contents))
+  .then(repos => getAbout(repos))
+  .then(repos => createDirectory(repos));

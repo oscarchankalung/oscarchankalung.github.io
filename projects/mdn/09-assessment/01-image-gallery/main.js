@@ -8,7 +8,7 @@ for (let i = 1; i <= 5; i++) {
   newImage.setAttribute('src', 'images/pic' + i + '.jpg');
   newImage.onclick = (event) => {
     displayedImage.src = event.target.src;
-  }
+  };
   thumbBar.appendChild(newImage);
 }
 
@@ -27,4 +27,4 @@ btn.onclick = () => {
     btn.textContent = 'Darken';
     overlay.style.backgroundColor = 'rgba(0,0,0,0)';
   }
-}
+};

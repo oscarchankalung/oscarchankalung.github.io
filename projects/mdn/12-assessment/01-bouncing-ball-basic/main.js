@@ -8,31 +8,31 @@ const height = canvas.height = document.body.clientHeight;
 
 // function to generate random number
 
-function random(min, max) {
+function random (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function randomSign() {
+function randomSign () {
   return Math.random() < 0.5 ? -1 : 1;
 }
 
-let balls = [];
+const balls = [];
 
 while (balls.length < 25) {
-  let size = random(10,20);
-  let ball = new Ball(
+  const size = random(10, 20);
+  const ball = new Ball(
     random(0 + size, width - size),
     random(0 + size, height - size),
-    random(2,7) * randomSign(),
-    random(2,7) * randomSign(),
-    `rgb(${random(0,255)}, ${random(0,255)}, ${random(0,255)})`,
+    random(2, 7) * randomSign(),
+    random(2, 7) * randomSign(),
+    `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`,
     size
   );
 
   balls.push(ball);
 }
 
-function loop() {
+function loop () {
   ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
   ctx.fillRect(0, 0, width, height);
 

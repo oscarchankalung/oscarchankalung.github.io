@@ -8,10 +8,9 @@ let rAF;
 document.body.addEventListener('click', () => {
   spinning = !spinning;
   spinning ? draw() : cancelAnimationFrame(rAF);
-})
+});
 
-function draw(timestamp) {
-
+function draw (timestamp) {
   // set startTime
   if (!startTime) {
     startTime = timestamp;
@@ -19,7 +18,7 @@ function draw(timestamp) {
 
   // set rotateCount
   rotateCount = (timestamp - startTime) / 5;
-  
+
   // set maximum rotateCount
   if (rotateCount > 359) {
     rotateCount %= 360;

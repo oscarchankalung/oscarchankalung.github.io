@@ -1,4 +1,4 @@
-function Shape(x, y, velX, velY, exists) {
+function Shape (x, y, velX, velY, exists) {
   this.x = x;
   this.y = y;
   this.velX = velX;

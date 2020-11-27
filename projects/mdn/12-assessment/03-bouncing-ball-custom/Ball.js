@@ -1,17 +1,16 @@
 class Ball extends Circle {
-
-  constructor(x, y, velX, velY, size, color, width, height) {
+  constructor (x, y, velX, velY, size, color, width, height) {
     super(x, y, velX, velY, size, color, width, height);
   }
-  
-  draw(ctx) {
+
+  draw (ctx) {
     ctx.beginPath();
     ctx.fillStyle = this.color;
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
   }
 
-  update(width, height) {
+  update (width, height) {
     if ((this.x + this.size) >= width) {
       this.velX = -(this.velX);
     }
@@ -32,7 +31,7 @@ class Ball extends Circle {
     this.y += this.velY;
   }
 
-  collisionDetect(balls) {
+  collisionDetect (balls) {
     for (let j = 0; j < balls.length; j++) {
       if (!(this === balls[j])) {
         const dx = this.x - balls[j].x;
@@ -40,7 +39,7 @@ class Ball extends Circle {
         const distance = Math.sqrt(dx * dx + dy * dy);
 
         if (distance < this.size + balls[j].size) {
-          balls[j].color = this.color = `rgb(${random(0,255)}, ${random(0,255)}, ${random(0,255)})`;
+          balls[j].color = this.color = `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`;
         }
       }
     }

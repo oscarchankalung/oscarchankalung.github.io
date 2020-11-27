@@ -6,11 +6,11 @@ let rotateCount = 0;
 let startTime = null;
 let rAF;
 
-function random(min, max) {
+function random (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function draw(timestamp) {
+function draw (timestamp) {
   if (!startTime) {
     startTime = timestamp;
   }
@@ -25,33 +25,33 @@ function draw(timestamp) {
   rAF = requestAnimationFrame(draw);
 }
 
-spinner.style.display = "none";
-result.style.display = "none";
+spinner.style.display = 'none';
+result.style.display = 'none';
 button.addEventListener('click', start);
 
-function start() {
+function start () {
   button.style.display = 'none';
-  spinner.style.display = 'block'
+  spinner.style.display = 'block';
   draw();
   setTimeout(setEndgame, random(3000, 8000));
 }
 
-function setEndgame() {
+function setEndgame () {
   cancelAnimationFrame(rAF);
   spinner.style.display = 'none';
   result.style.display = 'inline-block';
   result.textContent = 'Players Go!!';
-    
+
   document.addEventListener('keydown', keyHandler);
 
-  function keyHandler(e) {
+  function keyHandler (e) {
     let isOver = false;
 
     if (e.key === 'a' || e.key === 'A') {
-      result.textContent = 'Player 1 Won!!'
+      result.textContent = 'Player 1 Won!!';
       isOver = true;
     } else if (e.ley === 'l' || e.key === 'L') {
-      result.textContent = 'Player 2 Won!!'
+      result.textContent = 'Player 2 Won!!';
       isOver = true;
     }
 
@@ -62,7 +62,7 @@ function setEndgame() {
   }
 }
 
-function reset() {
+function reset () {
   button.style.display = 'inline-block';
   result.style.display = 'none';
   result.textContent = '';

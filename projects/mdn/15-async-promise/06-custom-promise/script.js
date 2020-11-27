@@ -1,4 +1,4 @@
-function timeout(message, interval) {
+function timeout (message, interval) {
   return new Promise((resolve, reject) => {
     if (message === '' || typeof message !== 'string') {
       reject('Message is empty or not a string');
@@ -7,9 +7,9 @@ function timeout(message, interval) {
     } else {
       setTimeout(resolve, interval, message);
     }
-  })
+  });
 }
 
 timeout('Hello there!', 3000)
-.then(message => alert(message))
-.catch(error => console.log('Error:' + error));
+  .then(message => alert(message))
+  .catch(error => console.log('Error:' + error));

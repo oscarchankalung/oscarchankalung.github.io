@@ -1,13 +1,13 @@
 class Teacher extends Person {
   // Defining a constructor function
-  constructor(first, last, age, gender, interests, subject, grade) {
+  constructor (first, last, age, gender, interests, subject, grade) {
     super(first, last, age, gender, interests);
     this._subject = subject;
     this.grade = grade;
   }
 
   // Overriding methods
-  greeting() {
+  greeting () {
     let prefix;
 
     if (this.gender === 'male' || this.gender === 'm') {
@@ -21,11 +21,11 @@ class Teacher extends Person {
     alert(`Hello. My name is ${prefix} ${this.name.last}, and I teach ${this._subject}.`);
   };
 
-  get subject() {
+  get subject () {
     return this._subject;
   }
 
-  set subject(newSubject) {
+  set subject (newSubject) {
     this._subject = newSubject;
   }
 };

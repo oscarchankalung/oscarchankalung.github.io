@@ -1,6 +1,6 @@
-let promise = fetch('../coffee.jpg');
+const promise = fetch('../coffee.jpg');
 
-let prmoise2 = promise.then(response => {
+const prmoise2 = promise.then(response => {
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
   } else {
@@ -8,13 +8,13 @@ let prmoise2 = promise.then(response => {
   }
 });
 
-let promise3 = prmoise2.then(myBlob => {
-  let objectURL = URL.createObjectURL(myBlob);
-  let image = document.createElement('img');
+const promise3 = prmoise2.then(myBlob => {
+  const objectURL = URL.createObjectURL(myBlob);
+  const image = document.createElement('img');
   image.src = objectURL;
   document.body.appendChild(image);
-})
+});
 
-let errorCase = promise3.catch(e => {
+const errorCase = promise3.catch(e => {
   console.log(`There has been a problem with your fetch operation: ${e.message}`);
-})
+});

@@ -1,20 +1,18 @@
-async function myFetch(path) {
-
-  let response = await fetch(path);
+async function myFetch (path) {
+  const response = await fetch(path);
 
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
   } else {
-    let blob = await response.blob();
-    let objectURL = URL.createObjectURL(blob);
-    let image = document.createElement('img');
+    const blob = await response.blob();
+    const objectURL = URL.createObjectURL(blob);
+    const image = document.createElement('img');
     image.src = objectURL;
     document.body.appendChild(image);
   }
-  
 }
 
 myFetch('../coffee.jpg')
-.catch(e => {
-  console.log(e)
-})
+  .catch(e => {
+    console.log(e);
+  });

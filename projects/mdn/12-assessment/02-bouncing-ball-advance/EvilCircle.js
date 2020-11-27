@@ -1,4 +1,4 @@
-function EvilCircle(x, y, exists) {
+function EvilCircle (x, y, exists) {
   Shape.call(this, x, y, 20, 20, exists);
   this.color = 'white';
   this.size = 10;
@@ -7,15 +7,15 @@ function EvilCircle(x, y, exists) {
 EvilCircle.prototype = Object.create(Shape.prototype);
 EvilCircle.prototype.constructor = EvilCircle;
 
-EvilCircle.prototype.draw = function() {
+EvilCircle.prototype.draw = function () {
   ctx.beginPath();
   ctx.strokeStyle = this.color;
   ctx.lineWidth = 3;
   ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
   ctx.stroke();
-}
+};
 
-EvilCircle.prototype.checkBounds = function() {
+EvilCircle.prototype.checkBounds = function () {
   if ((this.x + this.size) >= width) {
     this.x -= this.size;
   }
@@ -31,11 +31,11 @@ EvilCircle.prototype.checkBounds = function() {
   if ((this.y - this.size) <= 0) {
     this.y += this.size;
   }
-}
+};
 
-EvilCircle.prototype.setControls = function() {
-  let _this = this;
-  window.onkeydown = function(e) {
+EvilCircle.prototype.setControls = function () {
+  const _this = this;
+  window.onkeydown = function (e) {
     if (e.key === 'a') {
       _this.x -= _this.velX;
     } else if (e.key === 'd') {
@@ -45,10 +45,10 @@ EvilCircle.prototype.setControls = function() {
     } else if (e.key === 's') {
       _this.y += _this.velY;
     }
-  }
-}
+  };
+};
 
-EvilCircle.prototype.collisionDetect = function() {
+EvilCircle.prototype.collisionDetect = function () {
   for (let j = 0; j < balls.length; j++) {
     if (balls[j].exists) {
       const dx = this.x - balls[j].x;
@@ -62,4 +62,4 @@ EvilCircle.prototype.collisionDetect = function() {
       }
     }
   }
-}
+};

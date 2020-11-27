@@ -1,6 +1,5 @@
 class Circle {
-
-  constructor(x, y, velX, velY, size, color, width, height) {
+  constructor (x, y, velX, velY, size, color, width, height) {
     this.x = x;
     this.y = y;
     this.velX = velX;
@@ -9,8 +8,8 @@ class Circle {
     this.color = color;
     this.checkBounds(width, height);
   }
-  
-  checkBounds(width, height) {
+
+  checkBounds (width, height) {
     if ((this.x + this.size) >= width) {
       this.x -= this.size;
     }

@@ -7,7 +7,7 @@ const reset = document.querySelector('.reset');
 let timeoutDelta = 0;
 let timeoutDelay = 1000;
 let intervalDelta = 0;
-let intervalDelay = 1000;
+const intervalDelay = 1000;
 
 let startTime;
 let timeout;
@@ -29,9 +29,9 @@ reset.addEventListener('click', () => {
   intervalDelta = 0;
   displayWatch(timeoutWatch, timeoutDelta);
   displayWatch(intervalWatch, intervalDelta);
-})
+});
 
-function recursiveTimeout() {
+function recursiveTimeout () {
   clearTimeout(timeout);
   timeout = setTimeout(() => {
     refreshTimeout(startTime);
@@ -39,27 +39,27 @@ function recursiveTimeout() {
   }, timeoutDelay);
 }
 
-function refreshTimeout(startTime) {
+function refreshTimeout (startTime) {
   timeoutDelta = (Date.now() - startTime);
   timeoutDelay = 1000 - timeoutDelta % 1000;
   displayWatch(timeoutWatch, timeoutDelta);
 }
 
-function refreshInterval(startTime) {
+function refreshInterval (startTime) {
   intervalDelta = (Date.now() - startTime);
   displayWatch(intervalWatch, intervalDelta);
 }
 
-function displayWatch(watch, time) { 
-  let hours = Math.floor(time / 1000 / 3600);
-  let minutes = Math.floor(time / 1000 % 3600 / 60);
-  let seconds = Math.floor(time / 1000 % 60);
-  let milliseconds = time % 1000;
+function displayWatch (watch, time) {
+  const hours = Math.floor(time / 1000 / 3600);
+  const minutes = Math.floor(time / 1000 % 3600 / 60);
+  const seconds = Math.floor(time / 1000 % 60);
+  const milliseconds = time % 1000;
 
-  let displayHours = hours.toString().padStart(2, '0');
-  let displayMinutes = minutes.toString().padStart(2, '0');
-  let displaySeconds = seconds.toString().padStart(2, '0');
-  let displayMilliseconds = milliseconds.toString().padStart(3, '0');
+  const displayHours = hours.toString().padStart(2, '0');
+  const displayMinutes = minutes.toString().padStart(2, '0');
+  const displaySeconds = seconds.toString().padStart(2, '0');
+  const displayMilliseconds = milliseconds.toString().padStart(3, '0');
 
   watch.textContent = `${displayHours}:${displayMinutes}:${displaySeconds}:${displayMilliseconds}`;
 }

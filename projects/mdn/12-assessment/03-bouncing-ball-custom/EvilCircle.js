@@ -1,10 +1,9 @@
 class EvilCircle extends Circle {
-
-  constructor(width, height) {
-    super(width/2, height/2, 20, 20, 10, 'white');
+  constructor (width, height) {
+    super(width / 2, height / 2, 20, 20, 10, 'white');
   }
 
-  draw(ctx) {
+  draw (ctx) {
     ctx.beginPath();
     ctx.strokeStyle = this.color;
     ctx.lineWidth = 3;
@@ -12,7 +11,7 @@ class EvilCircle extends Circle {
     ctx.stroke();
   }
 
-  collisionDetect(balls) {
+  collisionDetect (balls) {
     for (let j = 0; j < balls.length; j++) {
       const dx = this.x - balls[j].x;
       const dy = this.y - balls[j].y;
@@ -25,7 +24,7 @@ class EvilCircle extends Circle {
     }
   }
 
-  setControls() {
+  setControls () {
     window.onkeydown = (e) => {
       if (e.key === 'a') {
         this.x -= this.velX;
@@ -36,6 +35,6 @@ class EvilCircle extends Circle {
       } else if (e.key === 's') {
         this.y += this.velY;
       }
-    }
+    };
   }
 }
