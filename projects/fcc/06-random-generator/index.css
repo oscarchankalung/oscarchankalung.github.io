@@ -32,11 +32,15 @@ body {
   height: 45px;
 }
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
   height: calc(100vh - 50px - 80px);
 }
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .main {
+    flex-direction: column;
     height: auto;
   }
 }
@@ -69,71 +73,137 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
+/* board */
+.board {
+  height: inherit;
+  width: calc(100% - 300px);
+  background-image: url("img/background_board.jpg");
+  background-size: 100% 100%;
+  padding: 0px 60px;
+}
+@media (max-width: 1100px) {
+  .board {
+    height: auto;
+    width: 100%;
+    padding: 0px;
+  }
+}
+/* edge */
+.edge {
+  height: inherit;
+  width: 25px;
+  background-color: #221541;
+  background-image: url("img/background_edge_vertical.png");
+  background-size: 100% 100%;
+}
+@media (max-width: 1100px) {
+  .edge {
+    height: 25px;
+    width: 100%;
+    background-image: url("img/background_edge_horizontal.png");
+  }
+}
+/* library */
+.library {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #221541;
+  height: inherit;
+  width: auto;
+  padding: 15px 25px 0px 35px;
+  overflow-x: visible;
+  overflow-y: scroll;
+}
+.library::after {
+  content: '';
+  width: 200px;
+  padding: 10px;
+}
+.library .history {
+  width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+}
+@media (max-width: 1100px) {
+  .library .history {
+    margin-left: 15px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 1100px) {
+  .library {
+    flex-direction: row;
+    height: 330px;
+    width: 100%;
+    padding: 10px 30px 10px 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .library::after {
+    content: '';
+    width: auto;
+    height: inherit;
+    padding: 10px;
+  }
+}
 /* Cardboard */
 .cardboard {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("img/cardboard_bg.jpg");
-  background-size: 100% 100%;
   width: 100%;
-  height: calc(100% - 130px - 300px);
-  padding: 0px 30px;
+  height: 80%;
 }
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .cardboard {
     flex-direction: column;
     height: auto;
   }
 }
 .cardboard .card-back {
-  width: auto;
-  height: 100%;
+  width: 360px;
+  height: auto;
   padding: 20px 0px 20px 20px;
-}
-@media (max-width: 800px) {
-  .cardboard .card-back {
-    height: 460px;
-  }
-}
-.cardboard .card-info {
-  height: 100%;
 }
 .cardboard .left {
   width: 375px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  margin-right: 25px;
+  margin: 0px 10px 0px 0px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .cardboard .left {
-    width: 100%;
     height: 460px;
     align-items: center;
-    margin-right: 0px;
+    margin: 50px 0px 50px 0px;
   }
 }
 .cardboard .right {
   width: 460px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .cardboard .right {
-    width: 100%;
+    width: auto;
+    max-width: 600px;
+    padding: 0px 50px;
   }
 }
 .cardboard .card-image {
-  width: auto;
-  height: 100%;
+  width: 360px;
+  height: auto;
   padding: 20px 0px 20px 0px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .cardboard .card-image {
     padding: 20px 0px 20px 20px;
   }
@@ -165,13 +235,16 @@ body {
 .control {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  background-color: #221541;
-  background-image: url("img/control_bg.png");
-  background-size: 100% 100%;
+  align-items: center;
   width: 100%;
-  height: 130px;
-  padding: 10px 20px;
+  height: 20%;
+  padding: 0px 60px;
+}
+@media (max-width: 1100px) {
+  .control {
+    height: 160px;
+    padding-top: 20px;
+  }
 }
 .control div {
   height: 80px;
@@ -193,19 +266,4 @@ body {
   width: 80px;
   background-image: url("img/control_arrow.png");
   background-position: -101px 8px;
-}
-/* library */
-.library {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #221541;
-  width: 100%;
-  height: 300px;
-  padding: 0px 30px;
-  overflow-x: scroll;
-}
-.library .history {
-  width: 185px;
-  height: auto;
 }
