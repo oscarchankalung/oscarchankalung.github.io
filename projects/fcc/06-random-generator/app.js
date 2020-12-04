@@ -4,6 +4,10 @@ import Control from './model/Control.js';
 import CardFactory from './model/CardFactory.js';
 
 const app = new App();
+const twitter = document.querySelector('.twitter');
+const text = 'Check%20out%20the%20Hearthstone%20Random%20Card%20Generator';
+const url = window.location.href;
+twitter.href = `https://twitter.com/intent/tweet?&text=${text}&url=${url}`;
 
 function App () {
   CardFactory.init().then(cardFactory => {
@@ -23,11 +27,23 @@ function App () {
 };
 
 App.prototype.handleControl = async function (event) {
-  this.setCardPage(event.target.id);
-  this.setVisibility();
-  this.card = await this.cardFactory.getCard(this.cardPage);
-  this.cardboard.renderCardboard(this.card);
-  this.library.updateHistory(String(this.cardPage), this.card.image);
+  if (this.checkButton(event.target.id)) {
+    this.setCardPage(event.target.id);
+    this.setVisibility();
+    this.card = await this.cardFactory.getCard(this.cardPage);
+    this.cardboard.renderCardboard(this.card);
+    this.library.updateHistory(String(this.cardPage), this.card.image);
+  }
+};
+
+App.prototype.checkButton = function (buttonID) {
+  const validButtons = [/rand/, /prev/, /next/, /cardPage#\d+/];
+  for (let i = 0; i < validButtons.length; i++) {
+    if (buttonID.match(validButtons[i])) {
+      return true;
+    }
+  }
+  return false;
 };
 
 App.prototype.setCardPage = function (buttonID) {
