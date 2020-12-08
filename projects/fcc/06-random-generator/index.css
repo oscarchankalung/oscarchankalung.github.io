@@ -111,7 +111,7 @@ body {
   align-items: flex-start;
   background-color: #221541;
   height: inherit;
-  width: auto;
+  width: 275px;
   padding: 15px 25px 0px 35px;
   overflow-x: visible;
   overflow-y: scroll;
