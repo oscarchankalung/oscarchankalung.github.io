@@ -10,3 +10,9 @@
 [submodule "projects/fcc/06-random-generator-pure"]
 	path = projects/fcc/06-random-generator-pure
 	url = https://github.com/oscarchankalung/Random-Hearthstone-Card-Generator-Pure
+[submodule "projects/fcc/06-random-generator-react"]
+	path = projects/fcc/06-random-generator-react
+	url = https://github.com/oscarchankalung/Random-Hearthstone-Card-Generator-React
+[submodule "projects/fcc/07-markdown-previewer-pure"]
+	path = projects/fcc/07-markdown-previewer-pure
+	url = https://github.com/oscarchankalung/Markdown-Previewer-Pure
