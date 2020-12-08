@@ -7,3 +7,6 @@
 [submodule "projects/other/Scratch-Scoreboard"]
 	path = projects/other/Scratch-Scoreboard
 	url = https://github.com/oscarchankalung/Scratch-Scoreboard
+[submodule "projects/fcc/06-random-generator-pure"]
+	path = projects/fcc/06-random-generator-pure
+	url = https://github.com/oscarchankalung/Random-Hearthstone-Card-Generator-Pure

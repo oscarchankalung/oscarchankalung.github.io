@@ -9,3 +9,4 @@ package.json
 
 #other
 .DS_Store
+*.less
