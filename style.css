@@ -241,12 +241,12 @@ footer {
 /* about > introduction */
 
 #introduction h3 {
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: 500;
 	margin-bottom: 20px;
 }
-#introduction p {
-	font-size: 24px;
+#introduction p, ul {
+	font-size: 20px;
 }
 #introduction a {
 	color: #0366d6;
