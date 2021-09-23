@@ -13,3 +13,6 @@
 2. Create "Projects/Biology"
 3. Create "Gallery"
 4. Use API instead for Noun Project Icon
+
+## Merge Git Repositories
+https://stackoverflow.com/questions/1425892/how-do-you-merge-two-git-repositories
