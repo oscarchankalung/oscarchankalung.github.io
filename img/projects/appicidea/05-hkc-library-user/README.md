@@ -1,4 +1,4 @@
-## The Hong Kong Club Library User Web Application
+# The Hong Kong Club Library User Web Application
 
 _This GitHub repository is private. Please contact oscarchankalung@gmail.com for access._
 
@@ -8,7 +8,7 @@ _This GitHub repository is private. Please contact oscarchankalung@gmail.com for
 - **Frontend Developers**: 3
 - **Tech Stacks**: Angular
 
-### Description
+## Description
 
 [The Hong Kong Club](https://en.wikipedia.org/wiki/Hong_Kong_Club) is the first gentlemen's club in Hong Kong. It is a private business and dining club established by the British before the colonization. Its members were and are among the most influential people in the city (basically Illuminati).
 
@@ -16,11 +16,11 @@ _This GitHub repository is private. Please contact oscarchankalung@gmail.com for
 
 This project is a web application created for the club members to access the library service. Users can browse, search, bookmark, reserve, loan and review various materials. They can also check their profile, remaining quota and transaction history. The authentication process is separated. Users are expected to log in to the club's main system and redirected to this website.
 
-### Outcome
+## Outcome
 
 This project was under UAT as I left the company. 90% of the frontend were finished for clients to review. It is expected the website would serve around a thousand users.
 
-### Screenshots
+## Screenshots
 
 ![01-screenshot-home](https://oscarchankalung.github.io/img/projects/appicidea/05-hkc-library-user/01-screenshot-home.png)
 
