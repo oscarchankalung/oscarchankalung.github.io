@@ -20,7 +20,5 @@ This project was under UAT as I left the company. 90% of the frontend were finis
 ## Screenshots
 
 <img src='01-screenshot-auth.png' width='300' /> <img src='02-screenshot-register.png' width='300' /> <img src='03-screenshot-profile.png' width='300' />
-
 <img src='04-screenshot-home.png' width='300' /> <img src='05-screenshot-calendar.png' width='300' /> <img src='06-screenshot-appointment.png' width='300' />
-
 <img src='07-screenshot-setting.png' width='300' />

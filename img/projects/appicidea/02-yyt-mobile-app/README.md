@@ -18,7 +18,5 @@ This project was under UAT as I left the company. 90% of the frontend were finis
 ## Screenshots
 
 <img src='01-screenshot-banner.png' width='600' />
-
 <img src='02-screenshot-home.png' width='600' />
-
 <img src='03-screenshot-member.png' width='600' />
