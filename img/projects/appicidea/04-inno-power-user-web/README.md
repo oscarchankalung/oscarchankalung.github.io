@@ -1,4 +1,3 @@
-
 # Inno Power Elderly Service Mobile Web App
 
 _This GitHub repository is private. Please contact oscarchankalung@gmail.com for access._
@@ -16,20 +15,12 @@ This project is a mobile web app created for the carers of dementia patients. Th
 
 ## Outcome
 
-This project was under UAT as I left the company. 90% of the frontend were finished for clients to review. It is expected the website would serve hundreds of  users.
+This project was under UAT as I left the company. 90% of the frontend were finished for clients to review. It is expected the website would serve hundreds of users.
 
 ## Screenshots
 
-![01-screenshot-auth](https://oscarchankalung.github.io/img/projects/appicidea/04-inno-power-user-web/01-screenshot-auth.png)
+<img src='01-screenshot-auth.png' width='300' /> <img src='02-screenshot-register.png' width='300' /> <img src='03-screenshot-profile.png' width='300' />
 
-![02-screenshot-register](https://oscarchankalung.github.io/img/projects/appicidea/04-inno-power-user-web/02-screenshot-register.png)
+<img src='04-screenshot-home.png' width='300' /> <img src='05-screenshot-calendar.png' width='300' /> <img src='06-screenshot-appointment.png' width='300' />
 
-![03-screenshot-profile](https://oscarchankalung.github.io/img/projects/appicidea/04-inno-power-user-web/03-screenshot-profile.png)
-
-![04-screenshot-home](https://oscarchankalung.github.io/img/projects/appicidea/04-inno-power-user-web/04-screenshot-home.png)
-
-![05-screenshot-calendar](https://oscarchankalung.github.io/img/projects/appicidea/04-inno-power-user-web/05-screenshot-calendar.png)
-
-![06-screenshot-appointment](https://oscarchankalung.github.io/img/projects/appicidea/04-inno-power-user-web/06-screenshot-appointment.png)
-
-![07-screenshot-setting](https://oscarchankalung.github.io/img/projects/appicidea/04-inno-power-user-web/07-screenshot-setting.png)
+<img src='07-screenshot-setting.png' width='300' />

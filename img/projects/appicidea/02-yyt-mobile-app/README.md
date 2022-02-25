@@ -17,8 +17,8 @@ This project was under UAT as I left the company. 90% of the frontend were finis
 
 ## Screenshots
 
-![01-screenshot-banner](https://oscarchankalung.github.io/img/projects/appicidea/02-yyt-mobile-app/01-screenshot-banner.png)
+<img src='01-screenshot-banner.png' width='600' />
 
-![02-screenshot-home](https://oscarchankalung.github.io/img/projects/appicidea/02-yyt-mobile-app/02-screenshot-home.png)
+<img src='02-screenshot-home.png' width='600' />
 
-![03-screenshot-member](https://oscarchankalung.github.io/img/projects/appicidea/02-yyt-mobile-app/03-screenshot-member.png)
+<img src='03-screenshot-member.png' width='600' />

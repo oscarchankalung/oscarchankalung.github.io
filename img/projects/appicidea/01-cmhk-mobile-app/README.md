@@ -19,16 +19,8 @@ This project is completed and has dozens of downloads.
 
 ## Screenshots
 
-![01-screenshot-home-1](https://oscarchankalung.github.io/img/projects/appicidea/01-cmhk-mobile-app/01-screenshot-home-1.webp)
+<img src='01-screenshot-home-1.webp' width='300' /> <img src='02-screenshot-home-2.webp' width='300' /> <img src='03-screenshot-inventory.webp' width='300' />
 
-![02-screenshot-home-2](https://oscarchankalung.github.io/img/projects/appicidea/01-cmhk-mobile-app/02-screenshot-home-2.webp)
+<img src='04-screenshot-monitor.webp' width='300' /> <img src='05-screenshot-transport.webp' width='300' /> <img src='06-screenshot-pick-up.webp' width='300' />
 
-![03-screenshot-inventory](https://oscarchankalung.github.io/img/projects/appicidea/01-cmhk-mobile-app/03-screenshot-inventory.webp)
-
-![04-screenshot-monitor](https://oscarchankalung.github.io/img/projects/appicidea/01-cmhk-mobile-app/04-screenshot-monitor.webp)
-
-![05-screenshot-transport](https://oscarchankalung.github.io/img/projects/appicidea/01-cmhk-mobile-app/05-screenshot-transport.webp)
-
-![06-screenshot-pick-up](https://oscarchankalung.github.io/img/projects/appicidea/01-cmhk-mobile-app/06-screenshot-pick-up.webp)
-
-![07-screenshot-rental](https://oscarchankalung.github.io/img/projects/appicidea/01-cmhk-mobile-app/07-screenshot-rental.webp)
+<img src='07-screenshot-rental.webp' width='300' />

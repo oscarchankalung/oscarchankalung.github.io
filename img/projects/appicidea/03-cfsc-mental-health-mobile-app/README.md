@@ -21,10 +21,6 @@ This project is completed and has hundreds of downloads.
 
 ## Screenshots
 
-![01-screenshot-home](https://oscarchankalung.github.io/img/projects/appicidea/03-cfsc-mental-health-mobile-app/01-screenshot-home.png)
+<img src='01-screenshot-home.png' width='300' /> <img src='02-screenshot-module.png' width='300' /> <img src='03-screenshot-practice.png' width='300' />
 
-![02-screenshot-module](https://oscarchankalung.github.io/img/projects/appicidea/03-cfsc-mental-health-mobile-app/02-screenshot-module.png)
-
-![03-screenshot-practice](https://oscarchankalung.github.io/img/projects/appicidea/03-cfsc-mental-health-mobile-app/03-screenshot-practice.png)
-
-![04-screenshot-sheet](https://oscarchankalung.github.io/img/projects/appicidea/03-cfsc-mental-health-mobile-app/04-screenshot-sheet.png)
+<img src='04-screenshot-sheet.png' width='300' />
