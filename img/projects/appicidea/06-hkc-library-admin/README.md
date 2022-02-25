@@ -1,12 +1,12 @@
-# The Hong Kong Club Library Admin Web Application
+# The Hong Kong Club Library Admin Web App
 
 _This GitHub repository is private. Please contact oscarchankalung@gmail.com for access._
 
 - **GitHub Repository**: https://github.com/oscarchankalung/hkc-library-admin
 - **Starting Date**: Project stared at November 2021
-- **Ending Date**: My contribution ended in December 2021
+- **Ending Date**: My contribution ended at December 2021
 - **Frontend Developers**: 3
-- **Tech Stacks**: Angular
+- **Tech Stacks**: Angular, Bootstrap
 
 ## Description
 
@@ -14,11 +14,11 @@ _This GitHub repository is private. Please contact oscarchankalung@gmail.com for
 
 [The Hong Kong Club Library](https://www.thehongkongclub.hk/public/library.html) contains over 5,200 books covering a wide range of subjects, over 13,000 DVDs and some 4,200 music CDs. The collection is separated into 5 categorizes: Movie, TV Series, CD, Book and Audio Book.
 
-This project is a web application created for the adminstrators to manage the library services. Librarians can perform rental, renewal and return of materials for the members. They can view the basket, reservation and transaction history and manage the circulation and member profile.
+This project is a web app created for the adminstrators to manage the library services. Librarians can perform rental, renewal and return of materials for the members. They can view the basket, reservation and transaction history and manage the circulation and member profile.
 
 ## Outcome
 
-70% of the frontend were finished as I left the company.  It is expected the website would serve 3 to 5 users.
+70% of the frontend were finished as I left the company. It is expected the website would serve 3 to 5 users.
 
 ## Screenshots
 

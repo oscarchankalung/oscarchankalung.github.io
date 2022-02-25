@@ -1,4 +1,4 @@
-# The Hong Kong Club Library User Web Application
+# The Hong Kong Club Library User Web App
 
 _This GitHub repository is private. Please contact oscarchankalung@gmail.com for access._
 
@@ -6,7 +6,7 @@ _This GitHub repository is private. Please contact oscarchankalung@gmail.com for
 - **Starting Date**: Project started at October 2022
 - **Ending Date**: My contribution ended at November 2022
 - **Frontend Developers**: 3
-- **Tech Stacks**: Angular
+- **Tech Stacks**: Angular, Bootstrap
 
 ## Description
 
@@ -14,7 +14,7 @@ _This GitHub repository is private. Please contact oscarchankalung@gmail.com for
 
 [The Hong Kong Club Library](https://www.thehongkongclub.hk/public/library.html) contains over 5,200 books covering a wide range of subjects, over 13,000 DVDs and some 4,200 music CDs. The collection is separated into 5 categorizes: Movie, TV Series, CD, Book and Audio Book.
 
-This project is a web application created for the club members to access the library service. Users can browse, search, bookmark, reserve, loan and review various materials. They can also check their profile, remaining quota and transaction history. The authentication process is separated. Users are expected to log in to the club's main system and redirected to this website.
+This project is a web app created for the club members to access the library service. Users can browse, search, bookmark, reserve, loan and review various materials. They can also check their profile, remaining quota and transaction history. The authentication process is separated. Users are expected to log in to the club's main system and redirected to this website.
 
 ## Outcome
 
