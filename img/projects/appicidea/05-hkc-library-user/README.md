@@ -3,9 +3,8 @@
 _This GitHub repository is private. Please contact oscarchankalung@gmail.com for access._
 
 - **GitHub Repository**: https://github.com/oscarchankalung/hkc-library-user
-- **Starting Date**: Project started at October 2022
-- **Ending Date**: My contribution ended at November 2022
-- **Frontend Developers**: 3
+- **Starting Date**: Project started at October 2021
+- **Ending Date**: My contribution ended at November 2021
 - **Tech Stacks**: Angular, Bootstrap
 
 ## Description
