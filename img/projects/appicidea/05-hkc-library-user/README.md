@@ -17,7 +17,7 @@ This project is a web app created for the club members to access the library ser
 
 ## Outcome
 
-This project was under UAT as I left the company. 90% of the frontend were finished for clients to review. It is expected the website would serve around a thousand users.
+This project was under UAT as I left the company. 90% of the frontend was finished for clients to review. It is expected the website would serve around a thousand users.
 
 ## Screenshots
 

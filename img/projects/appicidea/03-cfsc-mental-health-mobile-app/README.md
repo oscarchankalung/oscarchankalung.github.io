@@ -13,7 +13,7 @@ _This GitHub repository is private. Please contact oscarchankalung@gmail.com for
 
 [The Hong Kong Jockey Club Early Intervention and Community Support Project for Parents](https://www.cfsc.org.hk/rehab/fm/en/index.php) is a project aims to promote mental wellness in parents through social platforms, raises parents’ motivation to seek help, and offer early intervention to parents in need.
 
-This project is a mobile app created for parents to improve their emotional and mental health. Through animations and videos, this app promotes mental health to the public in an easy-to-understand way, and enhance the public's awareness of mental health and psychological resilience.
+This project is a mobile app created for parents to improve their emotional and mental health. Through animations and videos, this app promotes mental health to the public in an easy-to-understand way, and enhances the public's awareness of mental health and psychological resilience.
 
 ## Outcome
 

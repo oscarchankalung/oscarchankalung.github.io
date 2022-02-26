@@ -17,7 +17,7 @@ This project is a web app created for the administrators to manage the library s
 
 ## Outcome
 
-70% of the frontend were finished as I left the company. It is expected the website would serve 3 to 5 users.
+70% of the frontend was finished as I left the company. It is expected the website would serve 3 to 5 users.
 
 ## Screenshots
 

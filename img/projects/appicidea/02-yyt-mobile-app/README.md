@@ -13,7 +13,7 @@ Yan Yue Tong is one of the leading ginseng and dried seafood chain stores in Hon
 
 ## Outcome
 
-This project was under UAT as I left the company. 90% of the frontend were finished for client to review. They were still working on discount products and the membership program. It is expected the product would have thousands of users.
+This project was under UAT as I left the company. 90% of the frontend was finished for client to review. They were still working on discount products and the membership program. It is expected the product would have thousands of users.
 
 ## Screenshots
 

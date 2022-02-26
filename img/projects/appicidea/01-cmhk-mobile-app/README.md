@@ -1,4 +1,4 @@
-# CMHK Wine Management Mobile App
+# CMHK Wine Inventory Management Mobile App
 
 _This GitHub repository is private. Please contact oscarchankalung@gmail.com for access._
 
