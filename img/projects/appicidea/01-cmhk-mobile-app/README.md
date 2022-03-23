@@ -19,6 +19,6 @@ This project is completed and has dozens of downloads.
 
 ## Screenshots
 
-<img src='01-screenshot-home-1.webp' width='300' /> <img src='02-screenshot-home-2.webp' width='300' /> <img src='03-screenshot-inventory.webp' width='300' />
-<img src='04-screenshot-monitor.webp' width='300' /> <img src='05-screenshot-transport.webp' width='300' /> <img src='06-screenshot-pick-up.webp' width='300' />
-<img src='07-screenshot-rental.webp' width='300' />
+<img src='01-screenshot-home-1.webp' width='250' /> <img src='02-screenshot-home-2.webp' width='250' /> <img src='03-screenshot-inventory.webp' width='250' />
+<img src='04-screenshot-monitor.webp' width='250' /> <img src='05-screenshot-transport.webp' width='250' /> <img src='06-screenshot-pick-up.webp' width='250' />
+<img src='07-screenshot-rental.webp' width='250' />

@@ -21,14 +21,9 @@ This project is a web app created for the administrators to manage the library s
 
 ## Screenshots
 
-![01-screenshot-login](https://oscarchankalung.github.io/img/projects/appicidea/06-hkc-library-admin/01-screenshot-login.png)
-
-![02-screenshot-dashboard](https://oscarchankalung.github.io/img/projects/appicidea/06-hkc-library-admin/02-screenshot-dashboard.png)
-
-![03-screenshot-circulation](https://oscarchankalung.github.io/img/projects/appicidea/06-hkc-library-admin/03-screenshot-circulation.png)
-
-![04-screenshot-basket](https://oscarchankalung.github.io/img/projects/appicidea/06-hkc-library-admin/04-screenshot-basket.png)
-
-![05-screenshot-stock](https://oscarchankalung.github.io/img/projects/appicidea/06-hkc-library-admin/05-screenshot-stock-take.png)
-
-![06-screenshot-report](https://oscarchankalung.github.io/img/projects/appicidea/06-hkc-library-admin/06-screenshot-report.png)
+<img src='01-screenshot-login.png' width='500' />
+<img src='02-screenshot-dashboard.png' width='500' />
+<img src='03-screenshot-circulation.png' width='500' />
+<img src='04-screenshot-basket.png' width='500' />
+<img src='05-screenshot-stock.png' width='500' />
+<img src='06-screenshot-report.png' width='500' />

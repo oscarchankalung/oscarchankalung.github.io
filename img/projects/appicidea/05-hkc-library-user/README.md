@@ -21,12 +21,8 @@ This project was under UAT as I left the company. 90% of the frontend was finish
 
 ## Screenshots
 
-![01-screenshot-home](https://oscarchankalung.github.io/img/projects/appicidea/05-hkc-library-user/01-screenshot-home.png)
-
-![02-screenshot-search](https://oscarchankalung.github.io/img/projects/appicidea/05-hkc-library-user/02-screenshot-search.png)
-
-![03-screenshot-bookmark](https://oscarchankalung.github.io/img/projects/appicidea/05-hkc-library-user/03-screenshot-bookmark.png)
-
-![04-screenshot-user](https://oscarchankalung.github.io/img/projects/appicidea/05-hkc-library-user/04-screenshot-user.png)
-
-![05-screenshot-basket](https://oscarchankalung.github.io/img/projects/appicidea/05-hkc-library-user/05-screenshot-basket.png)
+<img src='01-screenshot-home.png' width='500' />
+<img src='02-screenshot-search.png' width='500' />
+<img src='03-screenshot-bookmark.png' width='500' />
+<img src='04-screenshot-user.png' width='500' />
+<img src='05-screenshot-basket.png' width='500' />
