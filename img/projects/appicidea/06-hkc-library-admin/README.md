@@ -22,8 +22,13 @@ This project is a web app created for the administrators to manage the library s
 ## Screenshots
 
 <img src='01-screenshot-login.png' width='600' />
+
 <img src='02-screenshot-dashboard.png' width='600' />
+
 <img src='03-screenshot-circulation.png' width='600' />
+
 <img src='04-screenshot-basket.png' width='600' />
+
 <img src='05-screenshot-stock.png' width='600' />
+
 <img src='06-screenshot-report.png' width='600' />
