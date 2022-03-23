@@ -1,13 +1,13 @@
 # Projects on AppicIDEA IT Solutions
 
+_GitHub repositories of these projects are private. Please contact oscarchankalung@gmail.com for access._
+
 - [01 CMHK Mobile App](#01-cmhk-mobile-app)
 - [02 YYT Mobile App](#02-ytt-mobile-app)
 - [03 CFSC Mental Health Mobile App](#03-cfsc-mental-health-mobile-app)
 - [04 Innopower User Web](#04-inno-power-user-web)
 - [05 HKC Library User](#05-hkc-library-user)
 - [06 HKC Library Admin](#06-hkc-library-admin)
-
-_GitHub repositories of these projects are private. Please contact oscarchankalung@gmail.com for access._
 
 ## 01 CMHK Mobile App
 
@@ -20,7 +20,7 @@ _GitHub repositories of these projects are private. Please contact oscarchankalu
 
 A one-stop service for information release, wine inventory management, wine cellar monitoring and electronic payment. Learn more [here](./01-cmhk-mobile-app/README.md).
 
-<img src='./01-cmhk-mobile-app/01-screenshot-home-1.webp' width='250' /> <img src='./01-cmhk-mobile-app/02-screenshot-home-2.webp' width='250' />
+<img src='./01-cmhk-mobile-app/01-screenshot-home-1.webp' width='300' /> <img src='./01-cmhk-mobile-app/02-screenshot-home-2.webp' width='300' />
 
 ## 02 YYT Mobile App
 
@@ -31,7 +31,7 @@ A one-stop service for information release, wine inventory management, wine cell
 
 A mobile app that incorporates the offline and online shopping experience, while providing a new loyalty program. Learn more [here](./02-yyt-mobile-app/README.md).
 
-<img src='./02-yyt-mobile-app/02-screenshot-home.png' width='500' />
+<img src='./02-yyt-mobile-app/02-screenshot-home.png' width='600' />
 
 ## 03 CFSC Mental Health Mobile App
 
@@ -44,7 +44,7 @@ A mobile app that incorporates the offline and online shopping experience, while
 
 A mobile app created for parents to improve their emotional and mental health through animations and videos. Learn more [here](./03-cfsc-mental-health-mobile-app/README.md).
 
-<img src='./03-cfsc-mental-health-mobile-app/01-screenshot-home.png' width='250' /> <img src='./03-cfsc-mental-health-mobile-app/02-screenshot-module.png' width='250' /> 
+<img src='./03-cfsc-mental-health-mobile-app/01-screenshot-home.png' width='300' /> <img src='./03-cfsc-mental-health-mobile-app/02-screenshot-module.png' width='300' />
 
 ## 04 Innopower User Web
 
@@ -56,7 +56,7 @@ A mobile app created for parents to improve their emotional and mental health th
 
 A mobile web app created for the carers of dementia patients to record the behavioral and psychological symptoms. Learn more [here](./04-inno-power-user-web/README.md).
 
-<img src='./04-inno-power-user-web/01-screenshot-auth.png' width='250' /> <img src='./04-inno-power-user-web/04-screenshot-question.png' width='250' />
+<img src='./04-inno-power-user-web/01-screenshot-auth.png' width='300' /> <img src='./04-inno-power-user-web/04-screenshot-question.png' width='300' />
 
 ## 05 HKC Library User
 
@@ -67,7 +67,7 @@ A mobile web app created for the carers of dementia patients to record the behav
 
 A web app created for the Hong Kong Club members to access the library service. Learn more [here](./05-hkc-library-user/README.md).
 
-<img src='./05-hkc-library-user/01-screenshot-home.png' width='500' />
+<img src='./05-hkc-library-user/01-screenshot-home.png' width='600' />
 
 ## 06 HKC Library Admin
 
@@ -78,4 +78,4 @@ A web app created for the Hong Kong Club members to access the library service. 
 
 A web app created for the administrators to manage the library services. Learn more [here](./06-hkc-library-admin/README.md).
 
-<img src='./06-hkc-library-admin/01-screenshot-login.png' width='500' />
+<img src='./06-hkc-library-admin/01-screenshot-login.png' width='600' />
