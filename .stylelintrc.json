@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    "stylelint-declaration-use-variable"
+  ],
+  "rules": {
+    "color-hex-case": true,
+    "no-duplicate-selectors": false,
+    "value-list-comma-newline-after": "always-multi-line",
+    "at-rule-empty-line-before": [
+      true,
+      { "except": ["after-same-name", "inside-block"] }
+    ],
+    "rule-empty-line-before": [
+      "never-multi-line",
+      { "except": "after-single-line-comment" }
+    ]
+  },
+  "extends": "stylelint-config-standard"
+}
